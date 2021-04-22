@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addyourdish</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h2>add your dish here</h2>
+        <form id="dish">
+            <fieldset>
+                <legend>ADD YOUR DISH </legend>
+                <label for="nameField">recipe name</label>
+                <input type="text" id="nameField">
+                <br>
+                <label for="recipeStory">Tell us the story of your dish(optional):</label><br>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <br>
+                <label for="serving">serving</label>
+                <input type="number" id="serving">
+                <br>
+                <label for="cookTime">Cooking time</label>
+                <input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+                <br>
+                <h4> perfect for: </h4>
+                <input type="radio" id="breakfast" name="perfect" value="breakfast">
+                <label for="breakfast">Breakfast</label><br>
+                <input type="radio" id="lunch" name="perfect" value="lunch">
+                <label for="lunch">lunch</label><br>
+                <input type="radio" id="dinner" name="perfect" value="dinner">
+                <label for="dinner">dinner</label><br>
+                <input type="radio" id="other" name="perfect" value="other">
+                <label for="other">Other</label><br>
+
+                ingrediants:<br> 
+                <!-- this for adding more ingrediants -->
+                <label for="ing1"></label>
+                <input type="text" id="ing1">
+                <button type="button" >+ ingrediants</button>
+                <div>
+
+                </div>
+
+
+                steps:<br>
+                <!-- this for adding more steps -->
+                <label for="step1"></label>
+                <input type="text" id="step1">
+                <button type="button" >+ step</button><br>
+
+                <label for="recipeImage">Add your dish image:</label>
+                <input type="url" id="recipeImage" name="recipeImage">
+                <input type="submit" value="add"><br>
+                <button type="button">add your recipe</button>
+               
+
+            </fieldset>
+
+        </form><br>
+
+        <section id="recipeBrief">
+            <img src="https://via.placeholder.com/200x100" alt="">
+            <h2>recipe name</h2>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi delectus quidem ratione nostrum quae laudantium harum mollitia eius nesciunt animi dolore dolor optio, quod quos obcaecati nam! Perspiciatis, necessitatibus aliquid.</p>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
