@@ -1,8 +1,47 @@
-.FirstBreakFast{
-    display:inline-block;
-    border: springgreen;
+.FirstBreakFast {
+    display: inline-block;
+    border: rgb(48, 66, 58);
     border-width: 3px;
-border-style: solid;
-border-radius: 50px;
-margin-bottom: 40px;
+    border-style: solid;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+section {
+    background-color: whitesmoke;
+}
+
+section ul {
+    border: rgb(7, 7, 7);
+    border-width: 3px;
+    margin-left: 50px;
+    border-style: solid;
+    border-radius: 5px;
+    width: 40%;
+    height: 30%;
+}
+
+section button {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    width: 15%;
+    height: 15%;
+    background-color: rgb(121, 238, 26);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section img {
+    margin-left: 5%;
+    margin-top: 0.7%;
+    border: 1px solid rgba(14, 13, 13, 0.425);
+    border-radius: 4px;
+    padding: 5px;
+    width: 30%;
+    height: 30%;
+}
+
+button:hover {
+    background-color: rgb(37, 109, 4);
 }
