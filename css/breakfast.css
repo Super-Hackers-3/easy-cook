@@ -26,8 +26,8 @@ section button {
     margin-bottom: 2%;
     width: 15%;
     height: 15%;
-    background-color: rgb(121, 238, 26);
-    font-size: 15px;
+    background-color: rgb(124, 129, 119);
+    font-size: 20px;
     font-weight: 400;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -43,5 +43,11 @@ section img {
 }
 
 button:hover {
-    background-color: rgb(37, 109, 4);
+    background-color: rgb(114, 172, 87);
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
 }
