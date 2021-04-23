@@ -35,25 +35,25 @@
 // //     button.removeEventListener('click', reportResults);
 // // }
 
-let section=document.getElementsByClassName('FirstBreakFast');
-let button=document.getElementsByClassName('breakFastBtn');
+// let section=document.getElementsByClassName('FirstBreakFast');
+// let button=document.getElementsByClassName('breakFastBtn');
 
-for(let i=0; i<3;i++){
-button[i].addEventListener('click', handleClick);
+// for(let i=0; i<3;i++){
+// button[i].addEventListener('click', handleClick);
 
-console.log (i);
+// console.log (i);
 
-function handleClick(event) {
-    section = document.getElementsByClassName('FirstBreakFast')[i];
-    let ul = document.createElement('ul');
-    section.appendChild(ul);
-    ul.textContent = 'contents';
+// function handleClick(event) {
+//     section = document.getElementsByClassName('FirstBreakFast')[i];
+//     let ul = document.createElement('ul');
+//     section.appendChild(ul);
+//     ul.textContent = 'contents';
 
-    for (let x = 1; x < 5; x++) {
-        let li = document.createElement('li')
-        ul.appendChild(li);
-        li.textContent = 'helo';
-    }
-    button[i].removeEventListener('click', handleClick);
-    console.log(i);
-}}
+//     for (let x = 1; x < 5; x++) {
+//         let li = document.createElement('li')
+//         ul.appendChild(li);
+//         li.textContent = 'helo';
+//     }
+//     button[i].removeEventListener('click', handleClick);
+//     console.log(i);
+// }}
