@@ -1,6 +1,6 @@
 'use strict';
 
-<<<<<<< HEAD
+
 let div = document.getElementById('Contets');
 let section = document.getElementsByClassName('FirstBreakFast');
 let button = document.getElementsByClassName('breakFastBtn');
@@ -41,7 +41,7 @@ for (let i = 0; i < 3; i++) {
         button[i].removeEventListener('click', handleClick)
     }
 }
-=======
+
 // let section = document.getElementById('FirstBreakFast1');
 // let button = document.getElementById('breakFastBtn');
 // button.addEventListener('click', handleClick);
@@ -99,4 +99,3 @@ for (let i = 0; i < 3; i++) {
 //     button[i].removeEventListener('click', handleClick);
 //     console.log(i);
 // }}
->>>>>>> merge-test-main
