@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Frank+Ruhl+Libre:wght@300&family=Indie+Flower&family=Vollkorn&display=swap');
 
@@ -76,4 +77,9 @@ padding: 30px 10px;
 }
 .bold{
     font-weight: bold;
-}
+
+/* .FirstBreakFast{
+background-color: #613162;
+border: 2px;
+border-radius: 2%; */
+/* } */
