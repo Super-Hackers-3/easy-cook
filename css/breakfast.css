@@ -10,10 +10,12 @@
 section {
     margin-left: 7%;
     margin-right: 7%;
-    margin-top: 7%;
+    margin-top: 3%;
     margin-bottom: 7%;
     background-color: rgba(245, 245, 245, 0.555);
     opacity: 1;
+    color: rgb(44, 42, 37);
+    font-size: 20px;
 }
 
 section ul {
@@ -29,6 +31,7 @@ section ul {
 section button {
     margin-left: 5%;
     margin-bottom: 2%;
+    margin-top: 1%;
     width: 15%;
     height: 15%;
     background-color: rgb(124, 129, 119);
@@ -44,7 +47,8 @@ section img {
     border-radius: 4px;
     padding: 5px;
     width: 40%;
-    height: 30%;
+    height: 50%;
+    margin-bottom: 1%;
 }
 
 button:hover {
@@ -67,7 +71,7 @@ section p {
 }
 
 body {
-    background-image: url('https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80');
+    background-image: url('https://images.unsplash.com/photo-1471477985614-a55f7db053db?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
