@@ -1,0 +1,74 @@
+.FirstBreakFast {
+    display: inline-block;
+    border: rgb(48, 66, 58);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+section {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background-color: rgba(245, 245, 245, 0.555);
+    opacity: 1;
+}
+
+section ul {
+    border: rgb(7, 7, 7);
+    border-width: 3px;
+    margin-left: 50px;
+    border-style: solid;
+    border-radius: 5px;
+    width: 40%;
+    height: 30%;
+}
+
+section button {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    width: 15%;
+    height: 15%;
+    background-color: rgb(124, 129, 119);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section img {
+    margin-left: 5%;
+    margin-top: 2%;
+    border: 1px solid rgba(14, 13, 13, 0.425);
+    border-radius: 4px;
+    padding: 5px;
+    width: 40%;
+    height: 30%;
+}
+
+button:hover {
+    background-color: rgb(114, 172, 87);
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+iframe {
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+
+section p {
+    margin-left: 5%;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099&q=80');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

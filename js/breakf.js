@@ -16,13 +16,8 @@ BreakFast.allElement = [];
 new BreakFast("hi", "hi2", "hi3", "hi4", "quPK4Kf5HrY", "https://www.youtube.com/embed/quPK4Kf5HrY");
 new BreakFast("hi", "hi22", "hi32", "hi22", "Hyz0C7i3ysU", "https://www.youtube.com/embed/Hyz0C7i3ysU");
 new BreakFast("hi", "hi333", "hi3321", "hi123", "WEDndTCyGgU", "https://www.youtube.com/embed/WEDndTCyGgU");
+
 // console.log(BreakFast.allElement);
-
-
-
-
-
-
 
 
 
@@ -46,8 +41,6 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
             let li = document.createElement('li')
             ul.appendChild(li);
             li.textContent = elment.arr[x];
-            
-           
         }
 
 
