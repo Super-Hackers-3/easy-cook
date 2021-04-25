@@ -39,31 +39,40 @@
         </div>
     </header>
     <main>
-        <section class="FirstBreakFast">
-            <img class="imgeSection" src="https://images.unsplash.com/photo-1538220856186-0be0e085984d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=699&q=80">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae sit assumenda reprehenderit veniam error labore ducimus unde ab ut, nihil doloremque s </p>
-            <button class="breakFastBtn">the recipe</button>
-
-            <div class="youtube" id="LcIytqkbdlo">
-            </div>
-
-
-
-        </section>
-        <section class="FirstBreakFast">
+        <section class="FirstBreakFast" id="firsts">
             <img class="imgeSection" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=653&q=80">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae sit assumenda reprehenderit veniam error labore ducimus unde ab ut, nihil doloremque s </p>
-            <button class="breakFastBtn">the recipe</button>
+            <p>Boiled eggs</p>
+            <button class="breakFastBtn">The recipe</button>
+        </section>
+
+        <section class="FirstBreakFast" id="seconds">
+            <img class="imgeSection" src="https://images.unsplash.com/photo-1591120583691-49d2741e55da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80">
+            <p>Hummus & Tzatziki</p>
+            <button class="breakFastBtn">The recipe</button>
 
         </section>
+
         <section class="FirstBreakFast">
             <img class="imgeSection" src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae sit assumenda reprehenderit veniam error labore ducimus unde ab ut, nihil doloremque s </p>
-            <button class="breakFastBtn">the recipe</button>
+            <p>FIRST</p>
+            <button class="breakFastBtn">The recipe</button>
+
+
         </section>
+        <div id="click">
+            <p>Press on any place to see the results</p>
+            <div class="rating" tabindex="1" onblur="calculateRating(this)">
+
+                <i class="fa fa-star-o" aria-hidden="true" value="1" onclick="clickStar(this)"></i>
+                <i class="fa fa-star-o" aria-hidden="true" value="2" onclick="clickStar(this)"></i>
+                <i class="fa fa-star-o" aria-hidden="true" value="3" onclick="clickStar(this)"></i>
+                <i class="fa fa-star-o" aria-hidden="true" value="4" onclick="clickStar(this)"></i>
+                <i class="fa fa-star-o" aria-hidden="true" value="5" onclick="clickStar(this)"></i>
+
+                <div class="rating-display"></div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <address class="address"><p class="bold">Contact Us</p>
