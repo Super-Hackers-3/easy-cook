@@ -5,6 +5,7 @@
     border-style: solid;
     border-radius: 50px;
     margin-bottom: 40px;
+    
 }
 
 section {
@@ -45,6 +46,7 @@ section img {
     padding: 5px;
     width: 40%;
     height: 30%;
+    
 }
 
 button:hover {
@@ -71,4 +73,10 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
+}
+.FirstBreakFast p{
+
+    margin-left:47%;
+   top: 0%;
+    
 }
