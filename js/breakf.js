@@ -101,3 +101,23 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
 //   };
 // }
 
+
+
+let breakfastImages = document.getElementsByClassName('imgeSection');
+let breakfastTitles = document.getElementsByClassName('recipeTitle');
+let arrayOfRecipesTitles = [];
+let arrayOfRecipesImages = [];
+
+for(let i=0; i<breakfastTitles.length; i++){
+  arrayOfRecipesTitles.push(breakfastTitles.item(i).innerHTML);
+}
+for(let i=0; i<breakfastImages.length; i++){
+  arrayOfRecipesImages.push(breakfastImages.item(i).currentSrc);
+}
+
+localStorage.setItem('Titles', JSON.stringify(arrayOfRecipesTitles));
+localStorage.setItem('Images', JSON.stringify(arrayOfRecipesImages));
+
+console.log(JSON.stringify(arrayOfRecipesTitles));
+let array = array.push(JSON.stringify(arrayOfRecipesTitles).split(''));
+console.log(array);

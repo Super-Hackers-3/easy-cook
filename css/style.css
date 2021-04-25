@@ -29,8 +29,10 @@
 
 .mySlides{
   z-index: 1;
-  width: 100%;
+  width: 96%;
   height: 550px;
+  margin: 2%;
+  margin-top: 0%;
   
 }
 
