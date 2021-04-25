@@ -22,9 +22,9 @@ footer {
 }
 
 
-/* main {
-       background-color:#c4b7a7;
-   } */
+main {
+       background-color:hsl(25, 19%, 13%,.6);
+   }
 
 .copyRights {
     font-size: larger;
