@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+
     <title>Easy Cooking</title>
 </head>
 
@@ -39,19 +40,35 @@
         </div>
 
     </header>
-    <br>
-    <br>
+   <br>
+   <br>
     <hr>
     <main>
         <section id="firstSection">
-            <img src="img/download.png" alt="Hero Picture">
-
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem consequatur impedit doloremque molestiae exercitationem? Quaerat eius praesentium, pariatur, beatae vitae sequi harum corporis voluptatem nulla optio accusamus autem labore consequatur.</p>
-
+            <div class="mySlides fade" id="firstHero">
+                <!-- <img src="img/900400.png" alt="Hero Picture"> -->
+                <div class='mainTextDiv'>WELCOME!</div>
+            </div>
+            <div class="mySlides fade" id="secondHero">
+                <!-- <img src="img/900400b.png" alt="Hero Picture"> -->
+                <div class='mainTextDiv'>IF YOU ARE HUNGRY ...</div>
+            </div>
+            <div class="mySlides fade" id="thirdHero">
+                <!-- <img src="img/900400g.png" alt="Hero Picture"> -->
+                <div class=mainTextDiv>AND IN A HURRY ...</div>
+            </div>
+            
         </section>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+    
         <section id="secondSection">
-            <h1>Our recommendations</h1>
-            <ul>
+            <h2>Our recommendations</h2>
                 <a href="path#idName">
                     <img src="img/download.png" alt="recommendation1">
                 </a>
@@ -61,16 +78,14 @@
                 <a href="path#idName">    
                     <img src="img/download.png" alt="recommendation3">
                 </a>
-            </ul>
+           
         </section>
+        
         <section id="thirdSection">
-            <h1>Categories</h1>
-            <ul>
-
+            <h2>Categories</h2> 
                 <img src="img/download.png" alt="Breakfast-Picture">
                 <img src="img/download.png" alt="Lunch-Picture">
                 <img src="img/download.png" alt="Dinner-Picture">
-            </ul>
         </section>
         <br>
         <br>

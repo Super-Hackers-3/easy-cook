@@ -1,80 +1,106 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Frank+Ruhl+Libre:wght@300&family=Indie+Flower&family=Vollkorn&display=swap');
-
-
 * {
     box-sizing: border-box;
 }
-.color{
-    background-image: url('../img/photo-1514516816566-de580c621376.jpg');
+
+.color {
+    background-image: url('../img/malik-skydsgaard-ylGcmefqE_I-unsplash.jpg');
     background-size: cover;
 }
-body{
+
+body {
     width: 80%;
     position: absolute;
     left: 10%;
 }
-.header {
-height: 50%;
-padding: 30px 10px;
+
+header {
+    height: 50%;
+    padding: 30px 10px;
+    margin-top: 2%;
+    height: 110px;
+    opacity: 0.9;
 }
-.he{
+
+.he {
     position: absolute;
-    top: 1.3%;
+    /* margin-top: 2px; */
+    top: 1.5%;
     left: 5%;
     width: 1000px;
     height: 80px;
 }
-.img1{
+
+.img1 {
     max-width: 100%;
     max-height: 100%;
 }
-.menu{
+
+.menu {
     position: relative;
+    margin-top: 12px;
 }
-.unorderedList{
+
+.unorderedList {
     position: absolute;
     right: 3%;
 }
-.unorderedList li, .dropdown{
+
+.unorderedList li,
+.dropdown {
     display: inline-block;
     letter-spacing: 1px;
+    box-shadow: 2px 2px 2px 2px;
+    margin-right: 5px;
+    background-color: hsl(25, 19%, 13%);
     /* border-right: 1px solid #D2A239; */
 }
-.unorderedList li a, .dropdown a{
+
+.unorderedList li a,
+.dropdown a {
     padding-left: 5px;
     padding-right: 5px;
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: bolder;
-    color: #6E646E;
+    font-weight:bolder;
+    color: #d4c3b8;
     text-shadow: 1px 1px black;
-    font-size: 18px;
+    font-size: 22px;
     display: block;
-    line-height:30px;
+    line-height: 30px;
+    
+
 }
-.unorderedList li a:hover, .dropdown a:hover{
+
+.unorderedList li a:hover,
+.dropdown a:hover {
     background-color: #740202;
-    color:#cfc5bf;
+    color: #cfc5bf;
 }
-.subContent{
+
+.subContent {
     position: absolute;
     top: 30px;
-    right:280px;
+    right: 340px;
     display: none;
     background-color: #CFC5BF;
+    z-index: 1;
 }
-.menu li:hover > ul{
+
+.menu li:hover>ul {
     display: block;
 }
+
 .subContent li {
     display: list-item;
-    width: 140px;
+    width: 167px;
 }
-.subContent li a{
+
+.subContent li a {
     text-align: center;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
