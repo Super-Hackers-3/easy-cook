@@ -1,48 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-/* .slideShowImages {
-    width: 900px;
-}
-#firstSection{
-    display: grid;
-}
-
-#firstSection div{
-    grid-column: 1 / span 1;
-    grid-row: 1 /span 1;
-    display: flex;
-    align-items: center;
-
-}
-
-@keyframes out{
-    0% {width:100%;height: 400px;}
-    100% {width: 0%;height: 400px;}
-}
-
-@keyframes inside{
-    0% {width:0%;height: 400px;}
-    100% {width: 100%;height: 400px;}
-}
-
-#animationSlides img{
-    animation: out 4s ease-in-out 0.5s 2 alternate;
-}
-#animationSlide img{
-    animation: inside 4s ease-in-out;
-} */
-
-
-/* new  */
-
 * {box-sizing:border-box;}
 
 /* Slideshow container */
-.firstSection {
-  max-width: 1000px;
+#firstSection {
+  /* max-width: 1000px; */
   position: relative;
   margin: auto;
   align-content: center;
+  width: 100%;
+  /* display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto ; */
+}
+
+.mySlides img{
+  width: 100%;
+  height: 400px;
+} 
+
+#firstSection p{
+  display: block;
+  
+  
+  /* grid-column: 1 /span 1;
+  grid-row: 2 /span 2; */
+}
+
+.mySlides{
+  z-index: 1;
+  width: 100%;
+  height: 550px;
+  
+}
+
+#firstHero{
+  background-image: url("../img/brooke-lark-wMzx2nBdeng-unsplash.jpg");
+  background-size: cover;
+  background-position-y: center;
+}
+#secondHero{
+  background-image: url("../img/jason-briscoe-7MAjXGUmaPw-unsplash.jpg");
+  background-size: cover;
+  background-position-y: center;
+}
+#thirdHero{
+  background-image: url("../img/katherine-chase-4MMK78S7eyk-unsplash.jpg");
+  background-size: cover;
+  background-position-y: center;
+} 
+
+/* Caption text */
+.mainTextDiv {
+  /* color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px; */
+  /* position: absolute; */
+  /* bottom: 8px; */
+  width: auto;
+  /* text-align: center; */
+  background-color:  hsl(25, 19%, 13%);
+  color: white;
+  font-size: 42px; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 30px;
+  /* width: 50%; */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode:multiply;
   
 }
 
@@ -50,6 +79,7 @@
 .mySlides {
   display: none;
   display: grid;
+  
 }
 
 /* Next & previous buttons */
@@ -78,18 +108,6 @@
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-/* Caption text */
-#mainText {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  /* position: absolute; */
-  /* bottom: 8px; */
-  width: 20%;
-  text-align: center;
-}
-
 
 
 /* The dots/bullets/indicators */
@@ -131,11 +149,13 @@
 
 #secondSection{
     display: grid;
-    grid-column-gap: 25px;
+    grid-column-gap: 10%;
     justify-content: center;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: auto auto auto;
     justify-items: center;
+    margin: 8%;
 }
+
 
 #secondSection a{
     display: block;
@@ -154,8 +174,9 @@
   display: grid;
   grid-column-gap: 25px;
   justify-content: center;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: auto auto auto;
   justify-items: center;
+  margin: 8%;
 }
 
 #thirdSection img{
