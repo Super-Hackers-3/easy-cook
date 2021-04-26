@@ -88,14 +88,3 @@ function showSlides() {
 
 
 showSlides(slideIndex);
-<<<<<<< HEAD
-console.log(slides);
-// console.log(slides.namedItem());
-=======
-
-
-
-
-
-
->>>>>>> merge-test-main
