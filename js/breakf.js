@@ -5,10 +5,10 @@ let button = document.getElementsByClassName('breakFastBtn');
 
 
 function BreakFast(elment1, elment2, elment3, elment4, videoId, srcVideo) {
-  this.arr = new Array(elment1, elment2, elment3, elment4);
-  this.videoId = videoId;
-  this.srcVideo = srcVideo;
-  BreakFast.allElement.push(this);
+    this.arr = new Array(elment1, elment2, elment3, elment4);
+    this.videoId = videoId;
+    this.srcVideo = srcVideo;
+    BreakFast.allElement.push(this);
 }
 
 BreakFast.allElement = [];
@@ -72,8 +72,8 @@ for (let i = 0; i < section.length; i++) {
     button[i].removeEventListener('click', handleClick);
     console.log(i);
     console.log(button[i]);
-  }
 }
+
 
 
 
@@ -107,4 +107,3 @@ for (let i = 0; i < section.length; i++) {
 //     }
 //     ratingDisplayEle.textContent = `You have selected ${ratingCount} rating out of 5`;
 // }
-
