@@ -45,6 +45,7 @@ header {
 .unorderedList {
     position: absolute;
     right: 3%;
+    
 }
 
 .unorderedList li,
@@ -55,6 +56,7 @@ header {
     /* box-shadow: 2px 2px 2px 2px;
     background-color: hsl(25, 19%, 13%); */
     /* border-right: 1px solid #D2A239; */
+    
 }
 
 .unorderedList li a,
@@ -70,6 +72,7 @@ header {
     display: block;
     line-height: 30px;
     
+    
 
 }
 
@@ -77,6 +80,7 @@ header {
 .dropdown a:hover {
     background-color: #740202;
     color: #cfc5bf;
+    
 }
 
 .subContent {
@@ -85,8 +89,7 @@ header {
     right: 305px;
     display: none;
     background-color: #40403E;
-    z-index: 1;
-}
+    z-index: 1;}
 
 .menu li:hover>ul {
     display: block;
@@ -94,7 +97,9 @@ header {
 
 .subContent li {
     display: list-item;
-    width: 142px;
+    width: 167px;
+    position: relative;
+    z-index: 10;
 }
 
 .subContent li a {

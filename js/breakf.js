@@ -101,6 +101,11 @@
 //     ratingDisplayEle.textContent = `You have selected ${ratingCount} rating out of 5`;
 // }
 
+<<<<<<< HEAD
+=======
+
+// to get the elements to local storage (for recomendation)
+>>>>>>> Jana
 let breakfastImages = document.getElementsByClassName('imgeSection');
 let breakfastTitles = document.getElementsByClassName('recipeTitle');
 let arrayOfRecipesTitles = [];
@@ -113,8 +118,8 @@ for(let i=0; i<breakfastImages.length; i++){
   arrayOfRecipesImages.push(breakfastImages.item(i).currentSrc);
 }
 
-localStorage.setItem('Titles', JSON.stringify(arrayOfRecipesTitles));
-localStorage.setItem('Images', JSON.stringify(arrayOfRecipesImages));
+localStorage.setItem('BFTitles', JSON.stringify(arrayOfRecipesTitles));
+localStorage.setItem('BFImages', JSON.stringify(arrayOfRecipesImages));
 
 console.log(JSON.stringify(arrayOfRecipesImages));
 console.log(breakfastImages);
