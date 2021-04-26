@@ -59,6 +59,8 @@ for (let i = 0; i < section.length; i++) {
     }
 }
 
+
+
 // var rating = document.querySelector(".rating");
 // var ratingDisplayEle = document.querySelector(".rating-display");
 

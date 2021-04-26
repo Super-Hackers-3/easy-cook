@@ -33,7 +33,7 @@ section {
 
 section ul {
     padding: 1.5%;
-    border: rgb(255, 253, 253);
+    border: rgb(245, 240, 171);
     border-width: 3px;
     margin-left: 7%;
     margin-right: 7%;
@@ -48,7 +48,7 @@ section ul {
 section ul:hover {
     /* background-color: rgb(153, 163, 158); */
     border-color: gold;
-    box-shadow: 0 0 10px gold;
+    box-shadow: 0 0 20px gold;
 }
 
 section ul li {
