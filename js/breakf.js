@@ -103,6 +103,15 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
 
 
 
+// let arrayOfImages = ['img1', 'img2','img3'];
+
+// let Image;
+
+// for (let i=0; i<arrayOfImages.length; i++){
+//   Image = document.getElementById(arrayOfImages[i]);
+// }
+
+
 let breakfastImages = document.getElementsByClassName('imgeSection');
 let breakfastTitles = document.getElementsByClassName('recipeTitle');
 let arrayOfRecipesTitles = [];
@@ -118,6 +127,5 @@ for(let i=0; i<breakfastImages.length; i++){
 localStorage.setItem('Titles', JSON.stringify(arrayOfRecipesTitles));
 localStorage.setItem('Images', JSON.stringify(arrayOfRecipesImages));
 
-console.log(JSON.stringify(arrayOfRecipesTitles));
-let array = array.push(JSON.stringify(arrayOfRecipesTitles).split(''));
-console.log(array);
+console.log(JSON.stringify(arrayOfRecipesImages));
+console.log(breakfastImages);
