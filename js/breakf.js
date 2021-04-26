@@ -33,7 +33,7 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
   // console.log(button[i]);
 
 
-  function handleClick(event) {
+  function handleClick(event){
     let elment= BreakFast.allElement[i];
     section = document.getElementsByClassName('FirstBreakFast')[i];
     console.log(i);
