@@ -101,11 +101,7 @@
 //     ratingDisplayEle.textContent = `You have selected ${ratingCount} rating out of 5`;
 // }
 
-<<<<<<< HEAD
-=======
 
-// to get the elements to local storage (for recomendation)
->>>>>>> Jana
 let breakfastImages = document.getElementsByClassName('imgeSection');
 let breakfastTitles = document.getElementsByClassName('recipeTitle');
 let arrayOfRecipesTitles = [];

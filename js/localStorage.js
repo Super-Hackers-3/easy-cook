@@ -1,6 +1,6 @@
 'use strict';
 
-
+let arraOfIds = ['link1','link2','link3'];
 
 let breakfastrecipeTitle = localStorage.getItem('BFTitles').split(',');
 let breakfastrecipeImage = localStorage.getItem('BFImages').split(',');
@@ -15,6 +15,11 @@ let arrayOfShowingImages = ['rec1', 'rec2','rec3'];
 let arrayOfShowingTitles = ['title1', 'title2','title3'];
 let RecomendationImage;
 let breakfastRecipeTitle;
+
+// let link1 = document.getElementById('link1');
+// let link2 = document.getElementById('link2');
+// let link3 = document.getElementById('link3');
+
 
 function breakfast() {
   for (let i=0; i<arrayOfShowingImages.length; i++){
@@ -37,11 +42,11 @@ function breakfast() {
 }
 console.log(breakfastrecipeTitle);
 // console.log(recipeImage[2].slice(23).slice(0,-1));
-
+let elementsById;
 function lunch() {
   for (let i=0; i<arrayOfShowingImages.length; i++){
     RecomendationImage = document.getElementById(arrayOfShowingImages[i]);
-    RecomendationImage.setAttribute('src', lunchrecipeImage[i].slice(23).slice(0,-1));
+
     if(i === arrayOfShowingImages.length-1){
       RecomendationImage.setAttribute('src', lunchrecipeImage[i].slice(23).slice(0,-2));
     }
@@ -55,7 +60,11 @@ function lunch() {
     if(i === arrayOfShowingTitles.length-1){
       breakfastRecipeTitle.textContent = lunchrecipeTitle[i].slice(1).slice(0,-2);
     }
+    RecomendationImage.setAttribute('src', lunchrecipeImage[i].slice(23).slice(0,-1));
+    elementsById = document.getElementById(arraOfIds[i]);
+    elementsById.setAttribute('href','pages/lunch.html#' + breakfastrecipeTitle[i].slice(2).slice(0,-1).replace(/ /g, ''));
   }
+  // console.log(breakfastrecipeTitle[0].slice(2).slice(0,-1).replace(/ /g, ''));
 }
 
 
@@ -96,7 +105,6 @@ function showTime() {
   hours = time.getHours();
   minutes = time.getMinutes();
   seconds = time.getSeconds();
-  
   if (hours >= 12){
     timePeriods = 'PM';
   } else {
