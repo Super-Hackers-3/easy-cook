@@ -29,8 +29,6 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
   button[i].addEventListener('click', handleClick);
   // console.log(i);
   // console.log(button[i]);
-
-
   function handleClick(event) {
     let elment = BreakFast.allElement[i];
     section = document.getElementsByClassName('FirstBreakFast')[i];
