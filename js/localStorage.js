@@ -34,8 +34,6 @@ console.log(recipeTitle);
 
 
 
-
-
 let hours,
   minutes,
   seconds,
@@ -64,15 +62,17 @@ function showTime() {
   if (seconds<10){
     seconds = '0' + seconds;
   }
-  hours = hours % 12;
+  if (hours<12){
+    breakfast();
+    marqueeElement.textContent = 'Good Morning! To get a delicious breakfast, we recommend these dishes to you!';
+  } else if (hours>12 && hours<18){
+    console.log('hello');
+  }
+  hours = hours % 12 || 12;
   if (hours<10){
     hours = '0' + hours;
   }
   timeBox.textContent = `${hours}:${minutes}:${seconds} ${timePeriods}`;
-  if (hours<12){
-    breakfast();
-    marqueeElement.textContent = 'Good Morning! To get a delicious breakfast, we recommend these dishes to you!';
-  }
 }
 
 showTime();
