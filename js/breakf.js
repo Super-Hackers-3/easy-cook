@@ -5,21 +5,25 @@ let button = document.getElementsByClassName('breakFastBtn');
 
 
 function BreakFast(elment1, elment2, elment3, elment4, videoId, srcVideo) {
-    // this.arr = new Array(elment1, elment2, elment3, elment4);
-    this.arr2 = [elment1, elment2, elment3, elment4];
-    this.videoId = videoId;
-    this.srcVideo = srcVideo;
-    BreakFast.allElement.push(this);
-    console.log(BreakFast.allElement);
+  this.arr = new Array(elment1, elment2, elment3, elment4);
+  this.videoId = videoId;
+  this.srcVideo = srcVideo;
+  BreakFast.allElement.push(this);
 }
 
 BreakFast.allElement = [];
 
+
 new BreakFast("This comes with 77 calories", "Eggs Are High in Quality Protein", "Eggs Raise Levels of “Good” Cholesterol", "40% of your daily vitamin D requirements", "quPK4Kf5HrY", "https://www.youtube.com/embed/quPK4Kf5HrY");
 new BreakFast("tzatziki contains 54 calories", "only 8 grams of carbohydrates", " Hummus is 100% soy bean", "Tzatziki is made with Greek yogurt", "Hyz0C7i3ysU", "https://www.youtube.com/embed/Hyz0C7i3ysU");
 new BreakFast("It contains 60 calories", "Treating Chronic Diseases", "It is a culinary herb or family of herbs", "It contain high amount of Iron", "WEDndTCyGgU", "https://www.youtube.com/embed/WEDndTCyGgU");
+<<<<<<< HEAD
 new BreakFast('It contains 64 calories', 'Contain Immune-Boosting Nutrients', 'Beneficial for Bone Health', 'Improve High Blood Pressure');
+=======
+
+>>>>>>> merge-test-main
 // console.log(BreakFast.allElement);
+
 
 
 
@@ -56,11 +60,24 @@ for (let i = 0; i < section.length; i++) {
         button[i].removeEventListener('click', handleClick);
         console.log(i);
         console.log(button[i]);
+
     }
+
+
+    let iframe = document.createElement('iframe');
+    section.appendChild(iframe);
+    iframe.setAttribute('id', elment.videoId);
+    document.getElementById(elment.videoId).src = elment.srcVideo;
+
+    button[i].removeEventListener('click', handleClick);
+    console.log(i);
+    console.log(button[i]);
+  }
 }
 
 
 
+<<<<<<< HEAD
 // var rating = document.querySelector(".rating");
 // var ratingDisplayEle = document.querySelector(".rating-display");
 
@@ -91,3 +108,35 @@ for (let i = 0; i < section.length; i++) {
 //     }
 //     ratingDisplayEle.textContent = `You have selected ${ratingCount} rating out of 5`;
 // }
+=======
+//function to calculate rating
+function calculateRating(ele) {
+    //check how many elements are having clicked class
+    var ratingCount = 0;
+    for (var i = 0; i < ele.children.length; i++) {
+        if (ele.children[i].classList.contains("clicked")) {
+            ratingCount++;
+        }
+    }
+    ratingDisplayEle.textContent = `You have selected ${ratingCount} rating out of 5`;
+}
+
+let breakfastImages = document.getElementsByClassName('imgeSection');
+let breakfastTitles = document.getElementsByClassName('recipeTitle');
+let arrayOfRecipesTitles = [];
+let arrayOfRecipesImages = [];
+
+for(let i=0; i<breakfastTitles.length; i++){
+  arrayOfRecipesTitles.push(breakfastTitles.item(i).innerHTML);
+}
+for(let i=0; i<breakfastImages.length; i++){
+  arrayOfRecipesImages.push(breakfastImages.item(i).currentSrc);
+}
+
+localStorage.setItem('Titles', JSON.stringify(arrayOfRecipesTitles));
+localStorage.setItem('Images', JSON.stringify(arrayOfRecipesImages));
+
+console.log(JSON.stringify(arrayOfRecipesImages));
+console.log(breakfastImages);
+
+>>>>>>> merge-test-main
