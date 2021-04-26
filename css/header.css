@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Frank+Ruhl+Libre:wght@300&family=Indie+Flower&family=Vollkorn&display=swap');
 * {
     box-sizing: border-box;
 }
 
 .color {
-    background-image: url('../img/malik-skydsgaard-ylGcmefqE_I-unsplash.jpg');
-    background-size: cover;
+    background-image: url('../img/gaelle-marcel-3o2j1uvUfAM-unsplash.jpg');
 }
 
 body {
@@ -51,9 +51,9 @@ header {
 .dropdown {
     display: inline-block;
     letter-spacing: 1px;
-    box-shadow: 2px 2px 2px 2px;
     margin-right: 5px;
-    background-color: hsl(25, 19%, 13%);
+    /* box-shadow: 2px 2px 2px 2px;
+    background-color: hsl(25, 19%, 13%); */
     /* border-right: 1px solid #D2A239; */
 }
 
@@ -62,11 +62,11 @@ header {
     padding-left: 5px;
     padding-right: 5px;
     text-decoration: none;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Original Surfer', cursive;
     font-weight:bolder;
-    color: #d4c3b8;
+    color: #A8B0BF;
     text-shadow: 1px 1px black;
-    font-size: 22px;
+    font-size: 15px;
     display: block;
     line-height: 30px;
     
@@ -82,9 +82,9 @@ header {
 .subContent {
     position: absolute;
     top: 30px;
-    right: 340px;
+    right: 305px;
     display: none;
-    background-color: #CFC5BF;
+    background-color: #40403E;
     z-index: 1;
 }
 
@@ -94,7 +94,7 @@ header {
 
 .subContent li {
     display: list-item;
-    width: 167px;
+    width: 142px;
 }
 
 .subContent li a {
