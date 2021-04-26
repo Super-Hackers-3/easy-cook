@@ -39,31 +39,49 @@
         </div>
     </header>
     <main>
-        <section class="FirstBreakFast">
-            <img class="imgeSection" src="../img/Pizza.jpg" id="img1">
-            <p class="recipeTitle">Recipe 1</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae sit assumenda reprehenderit veniam error labore ducimus unde ab ut, nihil doloremque s </p>
-            <button class="breakFastBtn">the recipe</button>
 
-            <div class="youtube" id="LcIytqkbdlo">
+        <section class="FirstBreakFast" id="firsts">
+            <img class="imgeSection" src="../img/boiled-eggs.jpg">
+            <p class="recipeTitle">Boiled eggs</p>
+            <button class="breakFastBtn">The recipe</button>
+        </section>
+
+
+        <section class="FirstBreakFast" id="seconds">
+            <img class="imgeSection" src="../img/Hummus.jpg">
+            <p class="recipeTitle">Hummus & Tzatziki</p>
+            <button class="breakFastBtn">The recipe</button>
+
+        </section>
+
+
+        <section class="FirstBreakFast">
+            <img class="imgeSection" src="../img/Zaatar.jpg">
+            <p class="recipeTitle">Za'atar Manaqish</p>
+            <button class="breakFastBtn">The recipe</button>
+        </section>
+
+        <section class="FirstBreakFast">
+
+            <img class="imgeSection" src="" alt="">
+            <p>First</p>
+            <button class="breakFastBtn">The recipe</button>
+
+        </section>
+        <div id="click">
+            <p>Press on any place to see the results</p>
+            <div class="rating" tabindex="1" onblur="calculateRating(this)">
+
+                <i class="fa fa-star-o" aria-hidden="true" value="1" onclick="clickStar(this)"></i>
+                <i class="fa fa-star-o" aria-hidden="true" value="2" onclick="clickStar(this)"></i>
+                <i class="fa fa-star-o" aria-hidden="true" value="3" onclick="clickStar(this)"></i>
+                <i class="fa fa-star-o" aria-hidden="true" value="4" onclick="clickStar(this)"></i>
+                <i class="fa fa-star-o" aria-hidden="true" value="5" onclick="clickStar(this)"></i>
+
+                <div class="rating-display"></div>
             </div>
+        </div>
 
-
-
-        </section>
-        <section class="FirstBreakFast">
-            <img class="imgeSection" src="../img/Chicken.jpg" id="img2">
-            <p class="recipeTitle">Recipe 2</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae sit assumenda reprehenderit veniam error labore ducimus unde ab ut, nihil doloremque s </p>
-            <button class="breakFastBtn">the recipe</button>
-
-        </section>
-        <section class="FirstBreakFast">
-            <img class="imgeSection" src="../img/Blueberry.jpg" id="img3">
-            <p class="recipeTitle">Recipe 3</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae sit assumenda reprehenderit veniam error labore ducimus unde ab ut, nihil doloremque s </p>
-            <button class="breakFastBtn">the recipe</button>
-        </section>
     </main>
     <footer>
         <address class="address"><p class="bold">Contact Us</p>

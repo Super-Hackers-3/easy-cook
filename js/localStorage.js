@@ -113,8 +113,9 @@ function showTime() {
   if (hours>=12 && hours<18){
     lunch();
   }
+
   if (hours>=18 || hours<6){
-    // dinner();
+    dinner();
 
   }
   
@@ -130,4 +131,3 @@ showTime();
 
 console.log(`${hours}:${minutes}:${seconds} ${timePeriods}`);
 
-dinner();
