@@ -59,3 +59,19 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
         console.log(button[i]);
     }
 }
+
+// to get the elements to local storage (for recomendation)
+let dinnerImages = document.getElementsByClassName('imgeSection');
+let dinnerTitles = document.getElementsByClassName('recipeTitle');
+let arrayOfRecipesTitles = [];
+let arrayOfRecipesImages = [];
+
+for(let i=0; i<dinnerTitles.length; i++){
+  arrayOfRecipesTitles.push(dinnerTitles.item(i).innerHTML);
+}
+for(let i=0; i<dinnerImages.length; i++){
+  arrayOfRecipesImages.push(dinnerImages.item(i).currentSrc);
+}
+
+localStorage.setItem('DTitles', JSON.stringify(arrayOfRecipesTitles));
+localStorage.setItem('DImages', JSON.stringify(arrayOfRecipesImages));
