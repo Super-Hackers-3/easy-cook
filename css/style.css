@@ -194,12 +194,14 @@
     text-shadow: 2px 2px 8px #1b130f;
     border: 2px solid #A8B0BF;
     border-radius: 7px;
-    margin-bottom: 15%;  
+    margin-bottom: 15%;
+    transition: 1s;  
 }
 #secondSection h2:hover{
   outline: none;
   border-color: #BFCAD9;
-  box-shadow: 0 0 10px #BFCAD9;
+  box-shadow: 0 0 20px gold;
+  transform: translateY(-10px);
 }
 #thirdSection{
   display: grid;
@@ -232,10 +234,11 @@
   margin-bottom: 15%;  
   padding-right: 25%;
   padding-left: 25%;
+  transition: 1s;
 }
 
 #secondSection h3 {
-  color: #8C1C03;
+  color: gold;
   grid-row: 1;
   grid-column: 2/ span 1;
   letter-spacing: 5px;
@@ -264,5 +267,6 @@ marquee {
 #thirdSection h2:hover{
   outline: none;
   border-color: #BFCAD9;
-  box-shadow: 0 0 10px #BFCAD9;
+  box-shadow: 0 0 20px gold;
+  transform: translateY(-10px);
 }

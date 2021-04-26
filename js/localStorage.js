@@ -112,11 +112,12 @@ function showTime() {
   }
   if (hours>=12 && hours<18){
     lunch();
+    marqueeElement.textContent = 'Lunch time!, we recommend these dishes to you';
   }
 
   if (hours>=18 || hours<6){
     dinner();
-
+    marqueeElement.textContent = 'Have a great meal Before going to bed ... Here are some...';
   }
   
   hours = hours % 12 || 12;
