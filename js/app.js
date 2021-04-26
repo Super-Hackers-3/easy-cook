@@ -86,3 +86,5 @@ function showSlides(n) {
 
 
 showSlides(slideIndex);
+console.log(slides);
+// console.log(slides.namedItem());
