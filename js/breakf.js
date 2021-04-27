@@ -35,7 +35,7 @@ for (let i = 0; i < section.length; i++) {
     button[i].addEventListener('click', handleClick);
     console.log(i);
 
-
+    // i=[0,1,2,3]
     function handleClick(event) {
         event.preventDefault()
         $(`#status${i}`).show();
@@ -53,6 +53,7 @@ for (let i = 0; i < section.length; i++) {
         for (let x = 0; x < elment.arr.length; x++) {
             let li = document.createElement('li');
             $(`#status${i}`).append(li);
+            ul.appendChild(li);
             li.textContent = '- ' + elment.arr[x];
             li.classList.add("mystyle");
 
@@ -115,6 +116,7 @@ for (let i = 0; i < section.length; i++) {
         $(`#status${i}`).hide();
 
     }
+
 }
 
 

@@ -35,17 +35,39 @@
         padding: 1.5%;
         width: 83%;
         margin-left: 7%;
-        margin-right: 7%;
+        /* margin-right: 7%; */
         margin-bottom: 0%;
         height: 30%;
         font-size: 70%;
         font-family: 'Barlow Condensed', sans-serif;
-        display: block;
+        /* display: block; */
         background-color: rgba(122, 122, 122, 0.658);
     }
     
     li {
         display: none;
+    }
+    
+    section div ul {
+        display: inline-block;
+        margin-bottom: 10px;
+        border: rgb(48, 66, 58);
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    
+    .mystyle {
+        display: block;
+        font-size: large;
+        font-size: large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* background-color: rgb(162, 165, 162); */
+        margin-left: 1%;
+        margin-right: 0%;
+        margin-bottom: 1%;
+        font-weight: 200;
+        width: 80%;
     }
     
     section button {
@@ -158,6 +180,7 @@
         /* position: relative; */
         margin-left: 10%;
         margin-bottom: 3%;
+        margin-top: 10px;
     }
     
     section p {
@@ -182,17 +205,6 @@
         border-radius: 10px 10px 0 0;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 70%;
-    }
-    
-    .mystyle {
-        display: block;
-        font-size: large;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        background-color: rgb(162, 165, 162);
-        margin-left: 10%;
-        margin-bottom: 1%;
-        font-weight: 200;
-        width: 80%;
     }
     
     .rating:not(:checked)>input {
