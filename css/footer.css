@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Original+Surfer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Frank+Ruhl+Libre:wght@300&family=Indie+Flower&family=Vollkorn&display=swap');
 * {
     box-sizing: border-box;
 }
 
 footer {
-    background-color: #c4b7a783;
+    background-color: #a8b0bf7e;
     height: 200px;
     margin-bottom: 1%;
 }
@@ -23,15 +24,16 @@ footer {
 
 
 main {
-       background-color:hsl(25, 19%, 13%,.6);
-   }
+    background-color:#1c252698;
+}
 
 .copyRights {
-    font-size: larger;
+    font-size: large;
     font-family: 'Frank Ruhl Libre', serif;
     position: absolute;
     bottom: 1%;
-    right: 39.5%;
+    right: 39.9%;
+    font-weight: 600;
 }
 
 .brief {
@@ -41,15 +43,18 @@ main {
     position: absolute;
     right: 2.5%;
     bottom: 2%;
+    font-weight: 600;
 }
 
 .brief p {
     padding-left: 10px;
+    
 }
 
 .brief p a {
     text-decoration: none;
     color: black;
+    font-weight: 600;
 }
 
 .brief p a:hover {
@@ -63,6 +68,7 @@ main {
     position: absolute;
     left: 5%;
     bottom: 2%;
+    font-weight: 600;
 }
 
 .address p {

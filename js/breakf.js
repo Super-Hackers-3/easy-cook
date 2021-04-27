@@ -5,52 +5,56 @@ let star = $("#status0");
 star.hide()
 $("#status1").hide()
 $("#status2").hide()
+$("#status3").hide()
 
 // let idVideo = ["quPK4Kf5HrY", "Hyz0C7i3ysU", "WEDndTCyGgU"];
 // let videoSrc = ["https://www.youtube.com/embed/quPK4Kf5HrY", "https://www.youtube.com/embed/Hyz0C7i3ysU", "https://www.youtube.com/embed/WEDndTCyGgU"];
 
+
+
 function BreakFast(elment1, elment2, elment3, elment4, videoId, srcVideo) {
-    this.arr = new Array(elment1, elment2, elment3, elment4);
-    this.videoId = videoId;
-    this.srcVideo = srcVideo;
-    BreakFast.allElement.push(this);
+  this.arr = new Array(elment1, elment2, elment3, elment4);
+  this.videoId = videoId;
+  this.srcVideo = srcVideo;
+  BreakFast.allElement.push(this);
 }
 
 BreakFast.allElement = [];
 
-new BreakFast("hi", "hi2", "hi3", "hi4", "quPK4Kf5HrY", "https://www.youtube.com/embed/quPK4Kf5HrY");
-new BreakFast("hi", "hi22", "hi32", "hi22", "Hyz0C7i3ysU", "https://www.youtube.com/embed/Hyz0C7i3ysU");
-new BreakFast("hi", "hi333", "hi3321", "hi123", "WEDndTCyGgU", "https://www.youtube.com/embed/WEDndTCyGgU");
 
+new BreakFast('This comes with 77 calories', 'Eggs Are High in Quality Protein', 'Eggs Raise Levels of “Good” Cholesterol', '40% of your daily vitamin D requirements', 'quPK4Kf5HrY', 'https://www.youtube.com/embed/quPK4Kf5HrY');
+new BreakFast('tzatziki contains 54 calories', 'only 8 grams of carbohydrates', ' Hummus is 100% soy bean', 'Tzatziki is made with Greek yogurt', 'Hyz0C7i3ysU', 'https://www.youtube.com/embed/Hyz0C7i3ysU');
+new BreakFast('It contains 60 calories', 'Treating Chronic Diseases', 'It is a culinary herb or family of herbs', 'It contain high amount of Iron', 'WEDndTCyGgU', 'https://www.youtube.com/embed/WEDndTCyGgU');
+new BreakFast('It contains 64 calories', 'Contain Immune-Boosting Nutrients', 'Beneficial for Bone Health', 'Improve High Blood Pressure');
 // console.log(BreakFast.allElement);
 
 
 
 
-for (let i = 0; i < BreakFast.allElement.length; i++) {
-    button[i].addEventListener('click', handleClick);
-    // console.log(i);
-    // console.log(button[i]);
+for (let i = 0; i < section.length; i++) {
+  button[i].addEventListener('click', handleClick);
+  console.log(i);
 
+      
+  function handleClick(event) {
+    $(`#status${i}`).show();
+    console.log(i);
+    let elment = BreakFast.allElement[i];
+    section = document.getElementsByClassName('FirstBreakFast')[i];
+    console.log(elment);
+    console.log(section);
+    let ul = document.createElement('ul');
+    section.appendChild(ul);
+    ul.textContent = 'Nutrition facts:';
+    let li = document.createElement('li');
+    ul.appendChild(li);
+    li.textContent = ' ';
+    for (let x = 0; x < elment.arr.length; x++) {
+      let li = document.createElement('li');
+      ul.appendChild(li);
+      li.textContent = '- ' + elment.arr[x];
 
-    function handleClick(event) {
-       $(`#status${i}`).show();
-        
-        let elment = BreakFast.allElement[i];
-        section = document.getElementsByClassName('FirstBreakFast')[i];
-        console.log(i);
-        console.log(section);
-        let ul = document.createElement('ul');
-        section.appendChild(ul);
-        ul.textContent = 'contents';
-
-        for (let x = 0; x < elment.arr.length; x++) {
-            let li = document.createElement('li')
-            ul.appendChild(li);
-            li.textContent = elment.arr[x];
-        }
-
-
+    }
         let iframe = document.createElement('iframe');
         section.appendChild(iframe);
         iframe.setAttribute('id', elment.videoId);
@@ -59,7 +63,8 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
         button[i].removeEventListener('click', handleClick);
         console.log(i);
         console.log(button[i]);
-    }
+    
+  }
 
    
     document.getElementById(`ratingForm${i}`).addEventListener('submit',handleSubmit)
@@ -73,10 +78,12 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
             $(`#status${i}`).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will improve our services");
          }else if((document.querySelector('input[name=rating]:checked') !==  null ) && document.querySelector('input[name=rating]:checked').value >3){
             $(`#status${i}`).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thank you");
+            
          }
+         console.log(`#status${i}`);
     }
- 
-                                   
+  }
+                           
 //         $(`form#ratingForm${i}`).submit(function(e) 
 //         {
 //          console.log($(`#ratingForm${i} :radio:checked`)); 
@@ -90,7 +97,7 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
         
 //         });
 
-}     
+
   
 
   
@@ -114,32 +121,17 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
 //   let youtube = videos[i];
 
 
-//   let img = document.createElement("img");
-//   img.setAttribute("src", "http://i.ytimg.com/vi/" 
-//                           + youtube.id + "/hqdefault.jpg");
-//   img.setAttribute("class", "thumb");
 
+let breakfastImages = document.getElementsByClassName('imgeSection');
+let breakfastTitles = document.getElementsByClassName('recipeTitle');
+let arrayOfRecipesTitles = [];
+let arrayOfRecipesImages = [];
 
-//   let circle = document.createElement("div");
-//   circle.setAttribute("class","circle");  
-
-//   youtube.appendChild(img);
-//   youtube.appendChild(circle);
-
-
-//   youtube.onclick = function() {
-
-//     let iframe = document.createElement("iframe");
-//     iframe.setAttribute("src",
-//           "https://www.youtube.com/embed/" + this.id 
-//         + "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1"); 
-
-
-//     iframe.style.width  = this.style.width;
-//     iframe.style.height = this.style.height;
-
-//     this.parentNode.replaceChild(iframe, this);
-
-//   }; 
-// }
-
+for(let i=0; i<breakfastTitles.length; i++){
+  arrayOfRecipesTitles.push(breakfastTitles.item(i).innerHTML);
+}
+for(let i=0; i<breakfastImages.length; i++){
+  arrayOfRecipesImages.push(breakfastImages.item(i).currentSrc);
+}
+localStorage.setItem('BFTitles', JSON.stringify(arrayOfRecipesTitles));
+localStorage.setItem('BFImages', JSON.stringify(arrayOfRecipesImages));
