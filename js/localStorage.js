@@ -1,27 +1,37 @@
 'use strict';
 
 
-let RecomendationImage;
-let breakfastRecipeTitle;
-let elementsById;
+let RecomendationImage,
+  breakfastRecipeTitle,
+  breakfastrecipeTitle,
+  breakfastrecipeImage,
+  lunchrecipeTitle,
+  lunchrecipeImage,
+  dinnerRecipeTitle,
+  dinnerRecipeImage,
+  elementsById;
 
 
-
-let breakfastrecipeTitle = localStorage.getItem('BFTitles').split(',');
-let breakfastrecipeImage = localStorage.getItem('BFImages').split(',');
-
-let lunchrecipeTitle = localStorage.getItem('LTitles').split(',');
-let lunchrecipeImage = localStorage.getItem('LImages').split(',');
-
-let dinnerRecipeTitle = localStorage.getItem('DTitles').split(',');
-let dinnerRecipeImage =localStorage.getItem('DImages').split(',');
+let arrayOfShowingImages = ['rec1', 'rec2','rec3']; //IDs for the images in the HOME page
+let arrayOfShowingTitles = ['title1', 'title2','title3']; //IDs for the titles in the HOME page
+let arraOfIds = ['link1', 'link2','link3']; //IDs for the anchor element in the HOME page
+let arrayOfDefaultImages = ['img/Chicken.jpg', 'img/Ribs.jpg', 'img/salad.jpg'];
 
 
+if (localStorage.BFTitles && localStorage.LTitles && localStorage.DTitles) {
+  breakfastrecipeTitle = localStorage.getItem('BFTitles').split(',');
+  breakfastrecipeImage = localStorage.getItem('BFImages').split(',');
 
-let arrayOfShowingImages = ['rec1', 'rec2','rec3'];
-let arrayOfShowingTitles = ['title1', 'title2','title3'];
-let arraOfIds = ['link1', 'link2','link3'];
-let arrayOfDefaultImages = ['Chicken.jpg', 'Ribs.jpg', 'salad.jpg'];
+  lunchrecipeTitle = localStorage.getItem('LTitles').split(',');
+  lunchrecipeImage = localStorage.getItem('LImages').split(',');
+
+  dinnerRecipeTitle = localStorage.getItem('DTitles').split(',');
+  dinnerRecipeImage =localStorage.getItem('DImages').split(',');
+} else {
+  // calling the default function
+  defaultImages();
+}
+
 
 
 // Function to show the Recomendations by default before getting the right ones from the local storage
@@ -33,12 +43,11 @@ function defaultImages() {
 
   for (let i=0; i<arrayOfShowingTitles.length; i++){
     breakfastRecipeTitle = document.getElementById(arrayOfShowingTitles[i]);
-    breakfastRecipeTitle.textContent = arrayOfDefaultImages[i].split('.')[0];
+    breakfastRecipeTitle.textContent = arrayOfDefaultImages[i].split('.')[0].slice(4);
   }
 }
 
-// calling the default function
-defaultImages();
+
 
 
 // Function to get the breakfast elements from the local storage and display them in the HOME page
@@ -138,10 +147,12 @@ function dinner() {
 
 
 
+
 let hours,
   minutes,
   seconds,
   time,
+  hours1,
   timePeriods;
 
 let recomendationSection = document.getElementById('rec');
@@ -179,6 +190,16 @@ function showTime() {
   if (seconds<10){
     seconds = '0' + seconds;
   }
+  hours1 = hours % 12 || 12;
+  if (hours1<10){
+    hours1 = '0' + hours1;
+  }
+  timeBox.textContent = `${hours1}:${minutes}:${seconds} ${timePeriods}`;
+}
+
+showTime();
+
+if (localStorage.BFTitles && localStorage.LTitles && localStorage.DTitles) {
   if (hours<12 && hours>=6){
     breakfast();
     marqueeElement.textContent = 'Good Morning! To get a delicious breakfast, we recommend these dishes to you!';
@@ -192,13 +213,4 @@ function showTime() {
     dinner();
     marqueeElement.textContent = 'Have a great meal Before going to bed ... Here are some...';
   }
-  hours = hours % 12 || 12;
-
-  if (hours<10){
-    hours = '0' + hours;
-  }
-  timeBox.textContent = `${hours}:${minutes}:${seconds} ${timePeriods}`; 
 }
-
-showTime();
-
