@@ -8,7 +8,6 @@
 .color {
     background-image: url('../img/gaelle-marcel-3o2j1uvUfAM-unsplash.jpg');
 }
-
 body {
     width: 80%;
     position: absolute;
@@ -16,16 +15,15 @@ body {
 }
 
 header {
+    width: 100%;
     height: 50%;
     padding: 30px 10px;
     margin-top: 2%;
     height: 110px;
-    opacity: 0.9;
 }
 
 .he {
     position: absolute;
-    /* margin-top: 2px; */
     top: 1%;
     left: 5%;
     width: 1000px;
@@ -40,6 +38,7 @@ header {
 .menu {
     position: relative;
     margin-top: 0%;
+    z-index: 1;
 }
 
 .unorderedList {
@@ -52,10 +51,6 @@ header {
     display: inline-block;
     letter-spacing: 1px;
     margin-right: 5px;
-    /* box-shadow: 2px 2px 2px 2px;
-    background-color: hsl(25, 19%, 13%); */
-    /* border-right: 1px solid #D2A239; */
-}
 
 .unorderedList li a,
 .dropdown a {
@@ -93,7 +88,6 @@ header {
     display: list-item;
     width: 141px;
     position: relative;
-    z-index: auto;
 }
 
 .subContent li a {
