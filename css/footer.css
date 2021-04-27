@@ -22,9 +22,8 @@ footer {
     width: 50px;
 }
 
-
 main {
-    background-color:#1c252698;
+    background-color: #9aa8aa98;
 }
 
 .copyRights {
@@ -48,7 +47,6 @@ main {
 
 .brief p {
     padding-left: 10px;
-    
 }
 
 .brief p a {
