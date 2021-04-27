@@ -26,7 +26,7 @@ header {
 .he {
     position: absolute;
     /* margin-top: 2px; */
-    top: 1.5%;
+    top: 1%;
     left: 5%;
     width: 1000px;
     height: 80px;
@@ -39,7 +39,7 @@ header {
 
 .menu {
     position: relative;
-    margin-top: 12px;
+    margin-top: 0%;
 }
 
 .unorderedList {
@@ -89,7 +89,7 @@ header {
     right: 305px;
     display: none;
     background-color: #40403E;
-    z-index: 1;}
+}
 
 .menu li:hover>ul {
     display: block;
@@ -97,9 +97,9 @@ header {
 
 .subContent li {
     display: list-item;
-    width: 167px;
+    width: 141px;
     position: relative;
-    z-index: 10;
+    z-index: auto;
 }
 
 .subContent li a {

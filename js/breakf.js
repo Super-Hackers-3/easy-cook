@@ -46,7 +46,6 @@ for (let i = 0; i < section.length; i++) {
 
     }
 
-
     let iframe = document.createElement('iframe');
     section.appendChild(iframe);
     iframe.setAttribute('id', elment.videoId);
@@ -58,6 +57,20 @@ for (let i = 0; i < section.length; i++) {
     console.log(button[i]);
 
   }
-
-
 }
+
+
+let breakfastImages = document.getElementsByClassName('imgeSection');
+let breakfastTitles = document.getElementsByClassName('recipeTitle');
+let arrayOfRecipesTitles = [];
+let arrayOfRecipesImages = [];
+
+for(let i=0; i<breakfastTitles.length; i++){
+  arrayOfRecipesTitles.push(breakfastTitles.item(i).innerHTML);
+}
+for(let i=0; i<breakfastImages.length; i++){
+  arrayOfRecipesImages.push(breakfastImages.item(i).currentSrc);
+}
+
+localStorage.setItem('BFTitles', JSON.stringify(arrayOfRecipesTitles));
+localStorage.setItem('BFImages', JSON.stringify(arrayOfRecipesImages));
