@@ -45,13 +45,13 @@ main {
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
-    transition: 7s;
+    transition: 5s;
 }
 
 .box .imgBox img {
     max-width: 100%;
-    opacity: 0.1;
-    transition: 8s;
+    opacity: 0;
+    transition: 5s;
 }
 
 .box:hover .imgBox img {
