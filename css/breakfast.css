@@ -26,8 +26,9 @@
         opacity: 1;
         color: rgb(19, 18, 17);
         font-size: 200%;
+        font-weight: 700;
         width: 40%;
-        font-family: 'Shadows Into Light', cursive;
+        /* font-family: 'Shadows Into Light', cursive; */
     }
     
     .section ul {
@@ -40,7 +41,7 @@
         font-size: 70%;
         font-family: 'Barlow Condensed', sans-serif;
         display: block;
-        background-color: rgb(241, 231, 236);
+        background-color: rgba(122, 122, 122, 0.658);
     }
     
     li {
@@ -180,6 +181,7 @@
         margin-bottom: 10px;
         border-radius: 10px 10px 0 0;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 70%;
     }
     
     .mystyle {
@@ -189,6 +191,7 @@
         background-color: rgb(162, 165, 162);
         margin-left: 10%;
         margin-bottom: 1%;
+        font-weight: 200;
         width: 80%;
     }
     
@@ -200,7 +203,7 @@
     
     .rating:not(:checked)>label {
         float: right;
-        /* margin-right: 7%; */
+        margin-right: 9%;
         padding-right: 100px;
         width: 1em;
         padding: 0 .1em;
@@ -271,9 +274,9 @@
         border-radius: 30px;
         width: 30%;
         height: 30px;
-        background-color: whitesmoke;
+        background-color: rgba(202, 111, 6, 0.842);
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 200;
         color: rgb(10, 10, 7);
     }
     
@@ -289,10 +292,12 @@
     .rating {
         display: inline-block;
         margin-top: 0px;
+        margin-left: 15%;
         text-align: center;
-        width: 100%;
+        width: 70%;
         background-color: rgba(236, 126, 0, 0.548);
         color: rgb(151, 172, 161);
+        border-radius: 10px;
     }
     
     #click {
