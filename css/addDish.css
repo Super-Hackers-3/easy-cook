@@ -1,0 +1,887 @@
+#showing {
+    position: relative;
+    display:grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    width: 100%;  
+    background-color:#afaaa7;
+/* border: 2px solid black; */
+} 
+#showing div{
+    /* border: 2px solid black; */
+    }
+/* #headerm{grid-area: header;}
+#servings{grid-area:servingss;}
+#time{grid-area:timer;}
+#prefer{grid-area:preferr;}
+#story{grid-area:story;}
+#ingre{grid-area:ingre;}
+#prepr{grid-area:prepr;}
+#ingreof{grid-area:ingreof;}
+#prepof{grid-area:prepof;}
+#footer{grid-area:footer;} */
+#par{
+    display:grid;
+    /* grid-template-areas:  
+    'header header header header header header'
+    'servingss story story story story story'
+    'timer story story story story story'
+    'preferr story story story story story'
+    'ingre ingre ingre prepr prepr prepr'
+    'ingreof ingreof ingreof prepof prepof prepof'
+    'footer footer footer footer footer footer'; */
+    grid-gap: 10px;
+    padding: 10px ;
+    /* background-color: aqua; */
+}
+#par div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #showing {
+    display: grid;
+    background-color: crimson;
+
+    grid-gap: 10px;
+
+   
+    
+   
+    
+   
+} #showing img{
+  
+   
+    grid-column: 9 / span 1;
+    margin-bottom: 10px;
+}
+div {
+    height:fit-content;
+   width: 50%;
+    margin: 0px;
+ 
+} */
+
+/* div p{
+    
+}
+div li{
+  
+} */
+/* #textPREPARE{
+    width: 200PX;
+    overflow-y:scroll;
+   
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+}
+#textINGRD{
+    width: 200PX;
+    overflow-y:scroll;
+  
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+} */
+
+
+
+ #header1{
+    font-size: xx-large;
+    grid-column:1 /span 1;
+   color: burlywood;
+ text-align: center;
+   background-color: #b81010;
+   opacity: 90%;
+   
+
+} 
+/* position: absolute; */
+
+/* font-weight: bolder; */
+/* top: 0px;
+left: 0px;
+text-align: center;
+padding-top: 10px;
+border: 1px solid  ;
+    height: 50px;
+    width: 300px;
+    background-color:#A61C1C;
+    border-radius: 10px;
+    opacity: 90%;
+}*/
+
+#servingaSize { 
+  
+    
+
+     /* position: absolute;   */
+    color: black;
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+    /* font-weight: bold;
+    top: 60px;
+    left: 15px; */;
+    padding: 5px;
+    width: 150px;
+    background-color: bisque;
+}
+#timeOf{ 
+    color: black;
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+    /* font-weight: bold;
+    top: 60px;
+    left: 15px; */;
+    padding: 5px;
+    width: 150px;
+    background-color: bisque;
+   
+}
+    
+
+
+ #BREAKperfect{ 
+    font-size: x-large;
+    color: cyan;
+
+      
+     color: black;
+    font-size: 13px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    padding: 5px;
+    }
+
+#LUNCHperfect{
+   
+     color: black;
+    font-size: 13px; 
+     font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+   padding: 5px;
+
+}
+#DINNERperfect{  
+    color: black;
+    font-size: 13px; 
+     font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+   padding: 5px;
+}
+
+
+
+    
+  
+#storyOf{
+    background-color:#ffffff;
+    /* width: 200px;
+    height: 50px; */
+    /* top: 60px;
+    left: 210px; */
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    opacity: 80%;
+    color: black;
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    float:right;
+    margin-right: 250px;
+    height: 50px;
+    margin-top:30px ;
+    /* position: absolute; */
+
+
+}
+    /* position: absolute; */
+    /* border: 1px ;
+    background-color:#ffffff;
+    width: 350px;
+    height: 50px;
+    top: 60px;
+    left: 350px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    opacity: 80%;
+    color: black;
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    overflow-y: scroll;
+    
+} */ 
+#textOfingred{ 
+
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+  
+    padding: 5px;
+}
+#ingerdUL{
+    
+}
+    /* position: absolute;  */
+    /* color: black;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    top: 115px;
+    left: 15px;
+
+}
+
+
+#textIngred { 
+    position: absolute; */
+    /* font-size: 20px;
+    top: 150px;
+    left: 15px;
+    width: 300px;
+    height: 250px;
+    border: 1px ;
+    display: inline-block;
+    
+    padding: 10px;
+    
+  } */
+
+/* #textOfprep{ */
+    /* position: absolute;  */
+    /* color: black;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    top: 115px;
+    left: 350px;
+    font-family: 'Dancing Script', cursive;
+    
+    
+
+} */
+/* #textPrepar{
+   
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    top: 150px;
+    left: 350px;
+    width: 250px;
+    height: 250px;
+    border: 1px ;
+    padding:10px ;
+    display: inline-block;
+   
+
+} */
+
+
+
+    
+
+/* 
+#imageHeader{
+   
+    bottom: 0px;
+    width: 200px;
+    height: 80px;
+    left: 0px;
+    bottom: 0;
+} */
+
+/* ul:only-of-type{
+    color: yellow;
+
+} */
+
+
+
+
+
+
+main {
+    /* height: 100%; */
+    width: 100%;
+    position: relative;
+    
+}
+#dish{
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    height: 600px;
+    
+    /* background-image: url(https://images.unsplash.com/photo-1604350521209-4bb5ba865f14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80); */
+/* background-size: 100%,100%;  */
+/* border-radius: 20px; */
+
+
+}
+main fieldset{
+    height: 646px;
+    position: absolute;
+    top: 0px;
+   
+}
+#bigBox{
+    border: 1px;
+    width: 500px;
+    height: 626px;
+    position: absolute;
+    z-index: 1;
+    opacity: 80%;
+    background-image: url(https://media1.giphy.com/media/zqBdnHSdUtAoL7k7fc/source.gif);
+    /* left: 200px; */
+    top:20px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 15px 50px 30px;;
+    background-blend-mode: lighten;
+}
+#smallBox{
+    border: 1px ;
+    position: relative;
+    z-index: 2;
+    width:500px;
+    height: 550px; 
+    /* left: 200px; */
+    top:70px;
+    
+
+
+}
+#headingBox{
+    border: 1px ;
+   position: absolute;
+ z-index: 3;
+    width:500px;
+    height: 60px; 
+    /* left: 200px; */
+    top:5px;
+
+    background-color:#0f0f0f;
+  color: #afaaa7;
+    font-size: 25px;
+  text-align: center;
+padding-top: 15px;
+    border: 1px solid rgb(155, 160, 161)  ;
+    border-width: 4px;
+    
+    border-radius: 12px;
+    font-family:'Lobster', cursive;
+
+}
+#about{
+    position:absolute;
+   float: right;
+    left :520px;
+    height: 575px;
+    width: 500px;
+    background-size: 100% 100%;
+    /* opacity: 80%; */
+   background-image: url(https://i.pinimg.com/originals/77/2c/c2/772cc2e564d417fd88a4af8e91e056c8.jpg);
+   border-radius: 15px 50px 30px;
+    top: 0PX;
+    text-align: center;
+    border-style:outset;
+  
+}
+#aboutPagehead{
+    color: #ffffff;;
+    position: absolute;
+    top:80px;
+    font-family: 'Zen Dots', cursive;
+    /* background-color: rgba(216, 191, 216, 0.267); */
+    border: 1px ;
+    border-radius: 15px 50px 30px;
+    font-size: 45px;
+    left: 10px;
+    background-color: #000000;
+    border-style:outset;
+}
+
+
+#about li {
+    color: rgb(226, 214, 214);
+    top: 370px;
+    
+   
+    font-size: larger;
+    /* text-align:center; */
+    /* background-color: wheat; */
+     font-family: 'Zen Dots', cursive;;
+     /* background-color: rgb(184, 38, 12); */
+     border-radius: 10px;
+
+     
+}
+
+
+/* #aboutBox{
+    background-color: rgb(223, 205, 202);
+    border: 1px ;
+    position: absolute;
+    width:400px;
+    height: 300px; 
+    left: 550px;
+    top:60px;
+    z-index: 1;
+    
+    
+
+} */
+  
+
+    
+
+/* 
+#nameField{
+    position:absolute;
+    /* position:absolute; */
+/*    
+    width: 100%; */
+    /* padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red; */
+
+    /* width: 300px;
+    height: 30px;
+    top: 20px;;
+    left: 50px;
+} */
+
+
+    /* background-color: cadetblue;
+     position:absolute;} */
+    /* top: 35px;
+    left: 15px; } */
+
+/* #recipeStory{
+    position:absolute;
+   
+    width: 100%;
+    padding: 12px 20px;
+    margin: 14px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+} */
+/* label[for="recipeStory"]{
+   
+    /* background-color: cadetblue; */
+    /* position:absolute;
+    top: 70px;
+    left: 15px;
+}  */ 
+/* #serving{
+    position:absolute;
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+} */
+/* label[for="serving"]{
+   
+    /* background-color: cadetblue; */
+    /* position:absolute;
+    top: 105px;
+    left: 15px;
+}  */ 
+/* #cookTime{
+    position:absolute;
+   
+    width: 200px;
+    height: 25px;
+    top: 140px;
+    left: 250px;
+} */
+/* label[for="cookTime"]{
+    
+    /* background-color: cadetblue; */
+    /* position:absolute;
+    top: 140px;
+    left: 15px; */
+  
+ /* #myBtn{
+    position:absolute;
+    
+    width: 200px;
+    height: 25px;
+    top: 175px;
+    left: 250px;
+}  */
+/* label[for="Ingredien"]{
+ 
+    /* background-color: cadetblue; */
+    /* position:absolute;
+    top: 175px;
+    left: 15px; */ 
+    /* opacity: 60%; */
+
+/* label[for="prep"]{
+    font-size: large;
+    /* background-color: cadetblue; */
+    /* position:absolute;
+    top: 210px;
+    left: 15px; */
+    /* opacity: 60%; */
+
+ /* #forPrep{
+    position:absolute;
+    font-size: larger;
+    width: 30px;
+    height: 25px;
+    top: 210px;
+    left: 410px;
+}  */
+/* #PreparationRole{
+    position:absolute;
+    
+    width:200px;
+    height: 25px;
+    top: 210px;
+    left: 250px;
+} */
+/* label[for="PreparationRole"]{
+    
+    /* background-color: cadetblue; */
+    /* position:absolute;
+    top: 210px;
+    left: 15px; */
+
+fieldset legend{
+    position:absolute;
+    font-size: 25px;
+    background-color: rgb(223, 230, 216);
+    border: 1px solid rgb(39, 110, 116)  ;
+    border-width: 4px;
+    
+    border-radius: 12px;
+    font-family:'Lobster', cursive;
+
+    /* top:; */
+}
+ /* #recipeImage {
+    position:absolute;
+   
+    width: 200px;
+    height: 25px;
+    top:400px;
+    left: 250px;
+} */
+/* label[for="recipeImage"]{
+    
+    /* background-color: cadetblue; */
+    /* position:absolute;
+    top: 400px;
+    left: 15px; */
+#perfect{
+    display: inline-block;
+    position: absolute;
+    padding:12px 80px; 
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+  
+}
+/* #breakfast{
+position:absolute;
+
+width: 50px;
+height: 22px;
+background-color: lightsalmon;
+top:287px;
+left: 90px;
+opacity: 50%;
+}
+label[for="breakfast"]{
+
+/* background-color: cadetblue; */
+/* position:absolute;
+top: 290px;
+left: 15px;
+}  */
+/* #lunch{
+    position:absolute;
+    width: 50px;
+    height:22px ;
+    background-color: lightsalmon;
+    top:317px;
+    left: 90px;
+    opacity: 50%;
+   
+    } */
+    
+    
+    
+    /* label[for="lunch"]{
+    /* background-color: cadetblue; */
+    /* position:absolute;
+    top: 320px;
+    left: 15px; */
+    
+    
+    
+    /* #dinner{
+        position:absolute;
+        
+        width: 50px;
+        height:22px ;
+        background-color: lightsalmon;
+        top:347px;
+        left: 90px;
+        opacity: 50%;
+        } */
+        
+        
+        
+        /* label[for="dinner"]{
+        
+        /* background-color: cadetblue; */
+        /* background-color: #f3fafa;
+        position:absolute;
+        top: 350px;
+        left: 15px; */
+        
+        
+        */ */
+
+
+main{
+    background-color:#f8eded;
+   height: auto;
+}
+
+
+
+
+main textarea {
+    /* background-color:whitesmoke;
+    
+    opacity: 80%;
+    border-radius: 10px;
+    border:2px solid #000000;; */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+  
+
+} 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+    opacity: 80%;
+}
+    input[type=number] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid red;
+        opacity: 80%;
+    }
+        input[type=url] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid red;
+        opacity: 80%;}
+
+    /* background-color:whitesmoke; */
+    /* width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;} */
+
+/* main label{
+  border-radius: 5px;
+  background-color:#ffffff;
+  border: 1px solid #000 ;
+  color: #000000;
+  opacity: 80%;
+  font-size: 16px;
+  font-family:'Lobster', cursive;
+} */
+/* #myBtn{
+    position:absolute;
+    
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}  */
+/* 
+#forIngred{
+position:absolute;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border-bottom: 2px solid rgb(231, 215, 215);
+} */
+/* #prep{
+position:absolute;
+width: 90%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border-bottom: 2px solid red;
+}  */
+/* 
+#forPrep{
+position:absolute;
+width: 10%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border-bottom: 2px solid red;
+}  */
+#one {
+    position:absolute;
+   
+    border: none;
+    color: rgb(201, 179, 179);
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    top:80%;
+    /* bottom:1%; */
+    border-radius: 12px;
+    background-color:#0f0f0f;
+    color:rgb(151, 148, 148);
+    /* opacity: 80%; */
+  border:2px solid rgb(112, 110, 110);
+  font-family:'Lobster', cursive;
+  left:180px
+  }
+  /* #myBtn{
+    position:absolute;
+    font-size: larger;
+    width: 150px;
+    height: 25px;
+    top: 175px;
+    left: 250px;
+  } */
+/* label[for="myBtn"]{
+    font-size: large;
+    /* background-color: cadetblue; */
+    /* position:absolute;
+    top: 175px
+    left: 15px; */ 
+
+    /* opacity: 60%; */
+
+#forIngred{
+    position:absolute;
+    font-size: larger;
+    width: 90px;
+    padding: 8.8px ;
+    margin: 8px 0;
+    top: 229px;
+    left: 410px;
+    background-color:#b81010;;
+    color:rgb(253, 252, 249);
+  border:none;
+  opacity: 80%;
+}
+/* #prep{
+    position:absolute;
+    font-size: larger;
+    width: 150px;
+    height: 25px;
+    top: 210px;
+    left: 250px;
+} */
+label[for="prep"]{
+    font-size: large;
+    /* background-color: cadetblue; */
+    position:absolute;
+    top: 210px;
+    left: 15px;
+    /* opacity: 60%; */
+} 
+#forPrep{
+    position:absolute;
+    font-size: larger;
+    width: 90px;
+    padding: 8.8px ;
+    margin: 8px 0;
+    top: 286.5px;
+    left: 410px;
+    background-color:#b81010;;
+    color:rgb(253, 252, 249);
+    opacity: 80%;
+ border:none
+  
+}
+
+
+
+
