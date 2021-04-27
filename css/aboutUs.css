@@ -24,17 +24,17 @@ main {
     position: relative;
     width: 300px;
     height: 300px;
-    display: flex;
+    display: inline-table;
     justify-content: center;
     align-items: center;
     margin: 40px;
-    background: #060c21;
-    transition: 5s;
+    background: rgba(6, 12, 33, 0.986);
+    transition: 2s;
 }
 
 .box:hover {
     height: 500px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .box .imgBox {
@@ -45,13 +45,13 @@ main {
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
-    transition: 7s;
+    transition: 5s;
 }
 
 .box .imgBox img {
     max-width: 100%;
-    opacity: 0.1;
-    transition: 8s;
+    opacity: 0;
+    transition: 5s;
 }
 
 .box:hover .imgBox img {
