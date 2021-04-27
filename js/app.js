@@ -53,13 +53,14 @@ let slideIndex = 0;
 //   showSlides(slideIndex += n);
 // }
 
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
 
-function showSlides(n) {
+
+function showSlides() {
   let i;
   let slides = document.getElementsByClassName('mySlides');
   let dots = document.getElementsByClassName('dot');
@@ -90,47 +91,6 @@ showSlides(slideIndex);
 
 
 
-
-
-let hours,
-  minutes,
-  seconds,
-  time,
-  timePeriods;
-
-let recomendationSection = document.getElementById('secondSection');
-let timeBox = document.createElement('p');
-recomendationSection.appendChild(timeBox);
-
-setInterval(showTime, 1000);
-function showTime() {
-  time = new Date();
-  hours = time.getHours();
-  minutes = time.getMinutes();
-  seconds = time.getSeconds();
-
-  if (hours >= 12){
-    timePeriods = 'PM';
-  } else {
-    timePeriods = 'AM';
-  }
-  if (minutes<10){
-    minutes = '0' + minutes;
-  }
-  if (seconds<10){
-    seconds = '0' + seconds;
-  }
-  hours = hours % 12;
-  if (hours<10){
-    hours = '0' + hours;
-  }
-
-  timeBox.textContent = `${hours}:${minutes}:${seconds} ${timePeriods}`;
-}
-
-showTime();
-
-console.log(`${hours}:${minutes}:${seconds} ${timePeriods}`);
 
 
 
