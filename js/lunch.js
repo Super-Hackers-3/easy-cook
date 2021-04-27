@@ -59,3 +59,20 @@ for (let i = 0; i < BreakFast.allElement.length; i++) {
         console.log(button[i]);
     }
 }
+
+
+
+let lunchImages = document.getElementsByClassName('imgeSection');
+let lunchTitles = document.getElementsByClassName('recipeTitle');
+let arrayOfRecipesTitles = [];
+let arrayOfRecipesImages = [];
+
+for(let i=0; i<lunchTitles.length; i++){
+  arrayOfRecipesTitles.push(lunchTitles.item(i).innerHTML);
+}
+for(let i=0; i<lunchImages.length; i++){
+  arrayOfRecipesImages.push(lunchImages.item(i).currentSrc);
+}
+
+localStorage.setItem('LTitles', JSON.stringify(arrayOfRecipesTitles));
+localStorage.setItem('LImages', JSON.stringify(arrayOfRecipesImages));
