@@ -45,7 +45,6 @@ header {
 .unorderedList {
     position: absolute;
     right: 3%;
-    
 }
 
 .unorderedList li,
@@ -56,7 +55,6 @@ header {
     /* box-shadow: 2px 2px 2px 2px;
     background-color: hsl(25, 19%, 13%); */
     /* border-right: 1px solid #D2A239; */
-    
 }
 
 .unorderedList li a,
@@ -65,22 +63,18 @@ header {
     padding-right: 5px;
     text-decoration: none;
     font-family: 'Original Surfer', cursive;
-    font-weight:bolder;
+    font-weight: bolder;
     color: #A8B0BF;
     text-shadow: 1px 1px black;
     font-size: 15px;
     display: block;
     line-height: 30px;
-    
-    
-
 }
 
 .unorderedList li a:hover,
 .dropdown a:hover {
     background-color: #740202;
     color: #cfc5bf;
-    
 }
 
 .subContent {
