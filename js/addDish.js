@@ -162,26 +162,25 @@ console.log(Recipes.meals)
 
 
 
-
-
-
-    // let StoryText = document.createElement('p');//done
-    // StoryText.setAttribute('id','storyOf')
-    // dev.appendChild(StoryText);
-    // StoryText.textContent = Recipes.meals[i].userStory;
+        let prepText = document.createElement('p');//done
+        prepText.setAttribute('id','textOfprep')
+        dev.appendChild(prepText);
+        prepText.textContent = "Prepeartion";
+    
+        let PrepText = document.createElement('ul');
+        PrepText.setAttribute('id','prepUL')
+       dev.appendChild(PrepText);
+        for(let n=0;n<Preparation.length;n++){
+        let li=document.createElement('li');
+        PrepText.appendChild(li)
+        li.textContent = Recipes.meals[i].userPreparation[n];
+        }
 
     let Text = document.createElement('p');//done
    Text.setAttribute('id','textOfingred')
     dev.appendChild(Text);
     Text.textContent = "Ingrediants";
-    
-    // for (let i = 0; i <Ingredients.length; i++) {//done
-    //     let listIngred =document.createElement('p')
-    //  //   listPrepar += Recipes.meals[i].userPreparation[i] + "<br>"+ "<br>";
-    //  listIngred.setAttribute('id','textINGRD')
-    //    dev.appendChild(listIngred);
-    //    listIngred.textContent=Recipes.meals[i].userIngred[i];
- 
+
      
      let IngredText = document.createElement('ul');
     IngredText.setAttribute('id','ingerdUL')
@@ -195,18 +194,7 @@ console.log(Recipes.meals)
 
    
 
-    let prepText = document.createElement('p');//done
-    prepText.setAttribute('id','textOfprep')
-    dev.appendChild(prepText);
-    prepText.textContent = "Prepeartion";
-
-    let PrepText = document.createElement('ul');
-   dev.appendChild(PrepText);
-    for(let n=0;n<Preparation.length;n++){
-    let li=document.createElement('li');
-    PrepText.appendChild(li)
-    li.textContent = Recipes.meals[i].userPreparation[n];
-    }
+  
 
     // let listPrepar = "";
     
