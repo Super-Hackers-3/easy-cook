@@ -3,10 +3,10 @@ let section = document.getElementsByClassName('FirstBreakFast');
 let button = document.getElementsByClassName('breakFastBtn');
 
 function BreakFast(elment1, elment2, elment3, elment4, videoId, srcVideo) {
-    this.arr = new Array(elment1, elment2, elment3, elment4);
-    this.videoId = videoId;
-    this.srcVideo = srcVideo;
-    BreakFast.allElement.push(this);
+  this.arr = new Array(elment1, elment2, elment3, elment4);
+  this.videoId = videoId;
+  this.srcVideo = srcVideo;
+  BreakFast.allElement.push(this);
 }
 
 BreakFast.allElement = [];
@@ -26,53 +26,64 @@ new BreakFast("hi", "hi333", "hi3321", "hi123", "WEDndTCyGgU", "https://www.yout
 
 
 for (let i = 0; i < BreakFast.allElement.length; i++) {
-    button[i].addEventListener('click', handleClick);
-    // console.log(i);
-    // console.log(button[i]);
+  button[i].addEventListener('click', handleClick);
+  // console.log(i);
+  // console.log(button[i]);
 
 
-    function handleClick(event) {
-        let elment = BreakFast.allElement[i];
-        section = document.getElementsByClassName('FirstBreakFast')[i];
-        console.log(i);
-        console.log(section);
-        let ul = document.createElement('ul');
-        section.appendChild(ul);
-        ul.textContent = 'contents';
+  function handleClick(event) {
+    let elment = BreakFast.allElement[i];
+    section = document.getElementsByClassName('FirstBreakFast')[i];
+    console.log(i);
+    console.log(section);
+    let ul = document.createElement('ul');
+    section.appendChild(ul);
+    ul.textContent = 'contents';
 
-        for (let x = 0; x < elment.arr.length; x++) {
-            let li = document.createElement('li')
-            ul.appendChild(li);
-            li.textContent = elment.arr[x];
-
-
-        }
-
-
-        let iframe = document.createElement('iframe');
-        section.appendChild(iframe);
-        iframe.setAttribute('id', elment.videoId);
-        document.getElementById(elment.videoId).src = elment.srcVideo;
-
-        button[i].removeEventListener('click', handleClick);
-        console.log(i);
-        console.log(button[i]);
+    for (let x = 0; x < elment.arr.length; x++) {
+      let li = document.createElement('li')
+      ul.appendChild(li);
+      li.textContent = elment.arr[x];
     }
+
+    let iframe = document.createElement('iframe');
+    section.appendChild(iframe);
+    iframe.setAttribute('id', elment.videoId);
+    document.getElementById(elment.videoId).src = elment.srcVideo;
+
+    button[i].removeEventListener('click', handleClick);
+    console.log(i);
+    console.log(button[i]);
+
+
+    document.getElementById(`ratingForm${i}`).addEventListener('submit', handleSubmit)
+    function handleSubmit(event) {
+      event.preventDefault();
+      console.log(document.querySelector('input[name=rating]:checked') === null);
+      if (document.querySelector('input[name=rating]:checked') === null) {
+        $(`#status${i}`).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nothing ");
+      }
+      else if ((document.querySelector('input[name=rating]:checked') !== null) && document.querySelector('input[name=rating]:checked').value < 3) {
+        $(`#status${i}`).html("&nbsp;&nbsp; We will improve our services");
+      } else if ((document.querySelector('input[name=rating]:checked') !== null) && document.querySelector('input[name=rating]:checked').value > 3) {
+        $(`#status${i}`).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thank you");
+
+
+      }
+
+    }
+  }
 }
+  let lunchImages = document.getElementsByClassName('imgeSection');
+  let lunchTitles = document.getElementsByClassName('recipeTitle');
+  let arrayOfRecipesTitles = [];
+  let arrayOfRecipesImages = [];
 
-
-
-let lunchImages = document.getElementsByClassName('imgeSection');
-let lunchTitles = document.getElementsByClassName('recipeTitle');
-let arrayOfRecipesTitles = [];
-let arrayOfRecipesImages = [];
-
-for(let i=0; i<lunchTitles.length; i++){
-  arrayOfRecipesTitles.push(lunchTitles.item(i).innerHTML);
-}
-for(let i=0; i<lunchImages.length; i++){
-  arrayOfRecipesImages.push(lunchImages.item(i).currentSrc);
-}
-
-localStorage.setItem('LTitles', JSON.stringify(arrayOfRecipesTitles));
-localStorage.setItem('LImages', JSON.stringify(arrayOfRecipesImages));
+  for (let i = 0; i < lunchTitles.length; i++) {
+    arrayOfRecipesTitles.push(lunchTitles.item(i).innerHTML);
+  }
+  for (let i = 0; i < lunchImages.length; i++) {
+    arrayOfRecipesImages.push(lunchImages.item(i).currentSrc);
+  }
+  localStorage.setItem('LTitles', JSON.stringify(arrayOfRecipesTitles));
+  localStorage.setItem('LImages', JSON.stringify(arrayOfRecipesImages));
