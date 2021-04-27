@@ -195,6 +195,7 @@ function showTime() {
     hours1 = '0' + hours1;
   }
   timeBox.textContent = `${hours1}:${minutes}:${seconds} ${timePeriods}`;
+  timeBox.setAttribute('id', 'time');
 }
 
 showTime();
