@@ -51,7 +51,6 @@ header {
     display: inline-block;
     letter-spacing: 1px;
     margin-right: 5px;
-}
 
 .unorderedList li a,
 .dropdown a {
@@ -59,7 +58,7 @@ header {
     padding-right: 5px;
     text-decoration: none;
     font-family: 'Original Surfer', cursive;
-    font-weight:bolder;
+    font-weight: bolder;
     color: #A8B0BF;
     text-shadow: 1px 1px black;
     font-size: 15px;

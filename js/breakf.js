@@ -37,6 +37,7 @@ for (let i = 0; i < section.length; i++) {
 
       
   function handleClick(event) {
+    event.preventDefault()
     $(`#status${i}`).show();
     console.log(i);
     let elment = BreakFast.allElement[i];
@@ -44,46 +45,78 @@ for (let i = 0; i < section.length; i++) {
     console.log(elment);
     console.log(section);
     let ul = document.createElement('ul');
-    section.appendChild(ul);
+    $(`#status${i}`).append(ul);
     ul.textContent = 'Nutrition facts:';
     let li = document.createElement('li');
-    ul.appendChild(li);
+    $(`#status${i}`).append(li);
     li.textContent = ' ';
     for (let x = 0; x < elment.arr.length; x++) {
       let li = document.createElement('li');
-      ul.appendChild(li);
+      $(`#status${i}`).append(li);
       li.textContent = '- ' + elment.arr[x];
 
     }
         let iframe = document.createElement('iframe');
-        section.appendChild(iframe);
+        $(`#status${i}`).append(iframe);
         iframe.setAttribute('id', elment.videoId);
         document.getElementById(elment.videoId).src = elment.srcVideo;
-
+        
         button[i].removeEventListener('click', handleClick);
         console.log(i);
         console.log(button[i]);
     
   }
 
+  
    
     document.getElementById(`ratingForm${i}`).addEventListener('submit',handleSubmit)
     function handleSubmit(event) {
         event.preventDefault();
-    console.log (document.querySelector('input[name=rating]:checked')=== null);
-        if (document.querySelector('input[name=rating]:checked')===  null ){
-            $(`#status${i}`).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nothing ");
+    // console.log (document.querySelector('input[name=rating]:checked')=== null);
+    console.log(i);
+        if (document.querySelector(`input[name=rating]:checked`)== null ){
+         
+          Swal.fire({
+            title: 'Rate Us Please',
+            // text: 'Modal with a custom image.',
+            imageUrl: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          });
+            $(`#status${i}`).hide();
          }
-         else if  ((document.querySelector('input[name=rating]:checked') !==  null ) && document.querySelector('input[name=rating]:checked').value <3){
-            $(`#status${i}`).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will improve our services");
-         }else if((document.querySelector('input[name=rating]:checked') !==  null ) && document.querySelector('input[name=rating]:checked').value >3){
-            $(`#status${i}`).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thank you");
+         else if  ((document.querySelector(`input[name=rating]:checked`) !=  null ) && document.querySelector(`input[name=rating]:checked`).value <3){
+          Swal.fire({
+            title: 'We Will Improve Our Service',
+            // text: 'Modal with a custom image.',
+            imageUrl: 'https://images.unsplash.com/photo-1607919564479-c2e00f3b14a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          });
+            // document.querySelector(`input[name=rating]:checked`).reset();
+            $(`#status${i}`).hide();
+          }else if((document.querySelector(`input[name=rating]:checked`) !=  null ) && document.querySelector(`input[name=rating]:checked`).value >=3){
+            // $(`#status${i}`).html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thank you");
+            Swal.fire({
+              title: 'Thank You ',
+              // text: 'Modal with a custom image.',
+              imageUrl: 'https://images.unsplash.com/photo-1619502735729-13b7525f13e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
+              imageWidth: 400,
+              imageHeight: 200,
+              imageAlt: 'Custom image',
+            });
+            $(`#status${i}`).hide();
+            // document.querySelector(`input[name=rating]:checked`).reset();
             
          }
-         console.log(`#status${i}`);
+         $(`#status${i}`).hide();   
+   
     }
   }
-                           
+                 
+  
 //         $(`form#ratingForm${i}`).submit(function(e) 
 //         {
 //          console.log($(`#ratingForm${i} :radio:checked`)); 
@@ -135,3 +168,5 @@ for(let i=0; i<breakfastImages.length; i++){
 }
 localStorage.setItem('BFTitles', JSON.stringify(arrayOfRecipesTitles));
 localStorage.setItem('BFImages', JSON.stringify(arrayOfRecipesImages));
+
+
