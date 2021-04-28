@@ -50,7 +50,7 @@ main {
 
 .box .imgBox img {
     max-width: 100%;
-    opacity: 0;
+    opacity: .4;
     transition: 5s;
 }
 
