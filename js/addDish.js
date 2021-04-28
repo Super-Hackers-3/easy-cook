@@ -2,9 +2,7 @@
 const paragraph = document.getElementById('rending')
 let Ingredients=[];
 let Preparation=[];
-// let imageHead = document.createElement('img');
 
-// limageHead.src= "https://img.icons8.com/plasticine/25/000000/alarm-clock--v2.png";
 
 function Recipes(userRecipes, userStory, userServing, userTime, userPerfectBreak, userPerfectLunch, userPerfectDinner,userImage) {
     this.userRecipes = userRecipes;
@@ -23,98 +21,12 @@ function Recipes(userRecipes, userStory, userServing, userTime, userPerfectBreak
     
 }
 Recipes.meals = []
-// console.log(Recipes.userStory)
+
  function render () {
-//     for(let i =0 ;i<Recipes.meals.length;i++){
-//      const container = document.getElementById('headerm')
-
-//  let nameOfRecipe = document.createElement('p');
-//  container.appendChild(nameOfRecipe);
-//  nameOfRecipe.textContent=Recipes.meals[i].userRecipes
-
-// const ahmad=document.getElementById('servings')
-//  let numberOfServing = document.createElement('p');
-//  ahmad.appendChild(numberOfServing);
-//  numberOfServing.textContent = `For ${Recipes.meals[i].userServing} People`;
-//  const serving=document.getElementById('time')
-
-//  let timeOfRecipe = document.createElement('p');
-//  serving.appendChild(timeOfRecipe);
-//  timeOfRecipe.textContent = `Cooking Time: ${Recipes.meals[i].userTime} Min`;
-//  const story=document.getElementById('story')
- 
-//  let StoryText = document.createElement('p');
-//  story.appendChild(StoryText);
-//  StoryText.textContent = Recipes.meals[i].userStory;
-//  const ingre=document.getElementById('ingre')
-
-//  let Text = document.createElement('p');
-// Text.setAttribute('id','textOfingred')
-// ingre.appendChild(Text);
-//  Text.textContent = "Ingrediants";
-//  const ingreof=document.getElementById('ingreof')
-
-//  let IngredText = document.createElement('ul');
-//  ingreof.appendChild(IngredText);
-//  for(let j=0;j<Ingredients.length;j++){
-//  let li=document.createElement('li');
-//  IngredText.appendChild(li)
-//  li.textContent = Recipes.meals[i].userIngred[j];
-//  }
-//  const prepr=document.getElementById('prepr')
-
-//  let prepText = document.createElement('p');
-//  prepr.appendChild(prepText);
-//  prepText.textContent = "Prepeartion";
-//  const prepof=document.getElementById('prepof')
-
-//  let PrepText = document.createElement('ol');
-//  prepof.appendChild(PrepText);
-//  for(let s=0;s<Preparation.length;s++){
-//  let li=document.createElement('li');
-//  PrepText.appendChild(li)
-//  li.textContent = Recipes.meals[i].userPreparation[s];
-//  }
-//  while(Recipes.meals[i].userPerfectBreak===true ||Recipes.meals[i].userPerfectLunch===true||Recipes.meals[i].userPerfectDinner===true){
-//  if(Recipes.meals[i].userPerfectBreak===true){
-//  const prefer=document.getElementById('prefer')
-//  let fectBreak = document.createElement('p');
-//  prefer.appendChild(fectBreak);
-//  fectBreak.textContent = 'Breakfast, ';
-//  Recipes.meals[i].userPerfectBreak=false
-//  }else if(Recipes.meals[i].userPerfectLunch===true){
-//  const prefer=document.getElementById('prefer')
-//  let Lunch = document.createElement('p');
-//  prefer.appendChild(Lunch);
-//  Lunch.textContent = 'Lunch, ';
-//  Recipes.meals[i].userPerfectLunch=false
-//  }else if(Recipes.meals[i].userPerfectDinner===true){
-//  const prefer=document.getElementById('prefer')
-//  let Dinner = document.createElement('p');
-//  prefer.appendChild(Dinner);
-//  Dinner.textContent = 'Dinner';
-//  Recipes.meals[i].userPerfectDinner=false
- 
-//  }}
-//  const imageof=document.getElementById('imageof')
-//  let image = document.createElement('img');
-//  imageof.appendChild(image);
-//  image.setAttribute("src",`${Recipes.meals[i].userImage}`)
- 
-
-
-
-
-
-
-
-
 
 
     const container= document.getElementById('showing')
-    // container.innerHTML=` <p id="textIngred"></p>
-    // <p id="textPrepar"></p>
-    // `
+  
    for(let i =0 ;i<Recipes.meals.length;i++){
        let dev = document.createElement('div')
        dev.setAttribute('id','dev1')
@@ -122,11 +34,7 @@ Recipes.meals = []
        dev2.setAttribute('id','dev2')
     let nameOfRecipe = document.createElement('p');//done
     nameOfRecipe.setAttribute('id','header1')
-    // nameOfRecipe.setAttribute('class')
-    // let StoryText = document.createElement('p');//done
-    // StoryText.setAttribute('id','storyOf')
-    // dev.appendChild(StoryText);
-    // StoryText.textContent = Recipes.meals[i].userStory;
+    
 
     container.appendChild(dev);
     container.appendChild(dev2);
@@ -136,7 +44,7 @@ console.log(Recipes.meals)
     let numberOfServing = document.createElement('p');//done
     let imageHead = document.createElement('img');
     imageHead.setAttribute('id',"imagehead")
-        imageHead.src= "https://img.icons8.com/plasticine/25/000000/alarm-clock--v2.png";
+        imageHead.src= "https://img.icons8.com/plasticine/27/000000/alarm-clock--v2.png";
         dev.appendChild(imageHead)
 
     let timeOfRecipe = document.createElement('p');//done
@@ -179,38 +87,11 @@ console.log(Recipes.meals)
     dev.appendChild(numberOfServing);
     numberOfServing.textContent = `For ${Recipes.meals[i].userServing} Serving `;
 
-//     let imageHead = document.createElement('img');
-// imageHead.setAttribute('id',"imagehead")
-//     imageHead.src= "https://img.icons8.com/plasticine/25/000000/alarm-clock--v2.png";
-//     dev.appendChild(imageHead)
 
 
 
-//     let timeOfRecipe = document.createElement('p');//done
-//    timeOfRecipe.setAttribute('id','timeOf')
-//     dev.appendChild(timeOfRecipe);
-//     timeOfRecipe.textContent = ` ${Recipes.meals[i].userTime} Minutes`;
-//     while(Recipes.meals[i].userPerfectBreak===true ||Recipes.meals[i].userPerfectLunch===true||Recipes.meals[i].userPerfectDinner===true){
-//         if(Recipes.meals[i].userPerfectBreak===true){
-//         let fectBreak = document.createElement('p');//done
-//         fectBreak.setAttribute('id','BREAKperfect')
-//         dev.appendChild(fectBreak);
-//         fectBreak.textContent = 'Breakfast';
-//         Recipes.meals[i].userPerfectBreak=false
-//         }else if(Recipes.meals[i].userPerfectLunch===true){
-//         let Lunch = document.createElement('p');//done
-//         Lunch.setAttribute('id','LUNCHperfect')
-//         dev.appendChild(Lunch);
-//         Lunch.textContent = 'Lunch ';
-//         Recipes.meals[i].userPerfectLunch=false
-//         }else if(Recipes.meals[i].userPerfectDinner===true){
-//         let Dinner = document.createElement('p');//done
-//         Dinner.setAttribute('id','DINNERperfect')
-//         dev.appendChild(Dinner);
-//         Dinner.textContent = 'Dinner';
-//         Recipes.meals[i].userPerfectDinner=false
-//         }
-//     }
+
+
     let StoryText = document.createElement('p');//done
     StoryText.setAttribute('id','storyOf')
     dev2.appendChild(StoryText);
@@ -236,10 +117,7 @@ console.log(Recipes.meals)
         li.textContent = Recipes.meals[i].userPreparation[n];
         }
 
-//     let Text = document.createElement('p');//done
-//    Text.setAttribute('id','textOfingred')
-//     dev.appendChild(Text);
-//     Text.textContent = "Ingrediants";
+
 
      
      let IngredText = document.createElement('ul');
@@ -256,40 +134,10 @@ console.log(Recipes.meals)
 
   
 
-    // let listPrepar = "";
-    
-    // for (let j = 0; j< Preparation.length; j++) {//done
-    //    let listPrepar =document.createElement('p')
-    // //   listPrepar += Recipes.meals[i].userPreparation[i] + "<br>"+ "<br>";
-    // listPrepar.setAttribute('id','textPREPARE')
-    //   dev.appendChild(listPrepar);
-    //   listPrepar.textContent=Recipes.meals[j].userPreparation[];
-
-
-    // document.getElementById("textPrepar").innerHTML = listPrepar;
     
     
     
-    // while(Recipes.meals[i].userPerfectBreak===true ||Recipes.meals[i].userPerfectLunch===true||Recipes.meals[i].userPerfectDinner===true){
-    // if(Recipes.meals[i].userPerfectBreak===true){
-    // let fectBreak = document.createElement('p');//done
-    // fectBreak.setAttribute('id','BREAKperfect')
-    // dev.appendChild(fectBreak);
-    // fectBreak.textContent = 'Breakfast, ';
-    // Recipes.meals[i].userPerfectBreak=false
-    // }else if(Recipes.meals[i].userPerfectLunch===true){
-    // let Lunch = document.createElement('p');//done
-    // Lunch.setAttribute('id','LUNCHperfect')
-    // dev.appendChild(Lunch);
-    // Lunch.textContent = 'Lunch, ';
-    // Recipes.meals[i].userPerfectLunch=false
-    // }else if(Recipes.meals[i].userPerfectDinner===true){
-    // let Dinner = document.createElement('p');//done
-    // Dinner.setAttribute('id','DINNERperfect')
-    // dev.appendChild(Dinner);
-    // Dinner.textContent = 'Dinner';
-    // Recipes.meals[i].userPerfectDinner=false
-    // }
+ 
     
     
     let image = document.createElement('img');
@@ -299,12 +147,6 @@ console.log(Recipes.meals)
     image.setAttribute("height", "100%")
     image.setAttribute("src",`${Recipes.meals[i].userImage}`)
     
-
-
-    // let imageHead = document.createElement('img');
-    // dev.appendChild(imageHead);
-    // imageHead.setAttribute('id',"imageHeader")
-    // imageHead.src= "https://i.ytimg.com/vi/omKbRsjNwV0/maxresdefault.jpg"
     
    
     }
@@ -314,24 +156,7 @@ console.log(Recipes.meals)
 
 
 
-    // const form = document.getElementById('dish')
-    // form.addEventListener('onclick', myFunction)
-    // function myFunction() {
-    //     event.preventDefault()
-    //     var Ingred = document.getElementById("myBtn").value;
-    //     console.log(Ingred);
-    //     Ingredients.push(Ingred)
-    //     document.getElementById("myBtn").value=""
-    //   }
-    // form.addEventListener('onclick', preFunction)
-    // function preFunction() {
-    //          event.stopPropagation()
-    //     var preper = document.getElementById("prep").value;
-    //     console.log(preper);
-    //     Preparation.push(preper)
-    //     document.getElementById("prep").value=""
-   
-    //     }
+    
 
     const form = document.getElementById('dish')
     form.addEventListener('onclick', myFunction)
@@ -380,18 +205,7 @@ function handleSubmit(event) {
 //    save()
     form.removeEventListener('submit', handleSubmit)
 }
-// render()
-// form.addEventListener('click', add)
-// function shayFunction() {
-//     // const dev = document.getElementById('showing')
-//     document.getElementById('showing').style.background = "#A69E97 ";
-//     document.getElementById("showing").style.backgroundSize = "100% 100%";
-//     document.getElementById("showing").style.height="500px";
-//     document.getElementById("showing").style.width="100%";
-//     // document.getElementById("textPREPARE").style.overflowY="scroll ";
-//     // document.getElementById("textIngred").style.overflowY="scroll "
 
-//   }
 
 function shayFunction() {
     document.getElementById('showing');
