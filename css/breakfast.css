@@ -150,6 +150,7 @@ fieldset legend {
     line-height: 1.2;
     color: #ddd;
     text-shadow: 1px 1px #bbb, 2px 2px rgb(243, 4, 4), .1em .1em .2em rgba(0, 0, 0, .5);
+    position: relative;
 }
 
 .rating:not(:checked)>label:before {

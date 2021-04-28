@@ -4,7 +4,6 @@
 * {
     box-sizing: border-box;
 }
-
 .color {
     background-image: url('https://images.unsplash.com/photo-1582650949011-13bacf9a35fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80');
     background-size: cover;
@@ -14,7 +13,6 @@ body {
     position: absolute;
     left: 10%;
 }
-
 header {
     width: 100%;
     height: 50%;
@@ -22,7 +20,6 @@ header {
     margin-top: 2%;
     height: 110px;
 }
-
 .he {
     position: absolute;
     top: 1%;
@@ -30,55 +27,43 @@ header {
     width: 1000px;
     height: 80px;
 }
-
 .img1 {
     max-width: 100%;
     max-height: 100%;
 }
-
 .menu {
     position: relative;
     margin-top: 0%;
     z-index: 1;
 }
-
 .unorderedList {
     position: absolute;
     right: 3%;
-    
 }
-
 .unorderedList li,
 .dropdown {
     display: inline-block;
     letter-spacing: 1px;
     margin-right: 5px;
-    
 }
-.unorderedList li a{
-    text-decoration: none;
-    color: #A8B0BF;
-}
+.unorderedList li a,
 .dropdown a {
     padding-left: 5px;
     padding-right: 5px;
     text-decoration: none;
     font-family: 'Original Surfer', cursive;
-    font-weight: bolder;
+    font-weight:bolder;
     color: #A8B0BF;
     text-shadow: 1px 1px black;
     font-size: 15px;
     display: block;
     line-height: 30px;
 }
-
 .unorderedList li a:hover,
 .dropdown a:hover {
-    /* background-color: #740202; */
-    color: #ad1010;
-    transform:scale(1.2);
+    background-color: #740202;
+    color: #CFC5BF;
 }
-
 .subContent {
     position: absolute;
     top: 30px;
@@ -86,28 +71,17 @@ header {
     display: none;
     background-color: #40403E;
 }
-
 .menu li:hover>ul {
-    display: block; 
+    display: block;
 }
-
 .subContent li {
     display: list-item;
     width: 141px;
     position: relative;
-    text-decoration: none;
 }
-
 .subContent li a {
     text-align: center;
-   
 }
-
 .bold {
     font-weight: bold;
-}
-
-.h:hover{
-    color: #ad1010;
-    transform:scale(1.2);
 }
