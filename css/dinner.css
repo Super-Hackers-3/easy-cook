@@ -205,6 +205,7 @@ fieldset legend {
     border-radius: 10px 10px 0 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 70%;
+    color: whitesmoke;
 }
 
 .rating:not(:checked)>input {
@@ -286,14 +287,14 @@ button {
     border-radius: 30px;
     width: 30%;
     height: 30px;
-    background-color: rgba(202, 111, 6, 0.842);
+    background-color: rgb(53, 50, 49);
     font-size: 15px;
     font-weight: 200;
-    color: rgb(10, 10, 7);
+    color: gold;
 }
 
 #inputt:hover {
-    background-color: rgb(53, 50, 49);
+    background-color: rgb(151, 172, 161);
     color: white;
 }
 
@@ -307,7 +308,7 @@ button {
     margin-left: 15%;
     text-align: center;
     width: 70%;
-    background-color: rgba(236, 126, 0, 0.548);
+    background-color: #740202;
     color: rgb(151, 172, 161);
     border-radius: 10px;
 }
