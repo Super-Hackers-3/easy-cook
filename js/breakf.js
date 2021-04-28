@@ -25,7 +25,7 @@ BreakFast.allElement = [];
 new BreakFast('This comes with 77 calories', 'Eggs Are High in Quality Protein', 'Eggs Raise Levels of “Good” Cholesterol', '40% of your daily vitamin D requirements', 'FTha4zARGN4', 'https://www.youtube.com/embed/FTha4zARGN4');
 new BreakFast('tzatziki contains 54 calories', 'only 8 grams of carbohydrates', ' Hummus is 100% soy bean', 'Tzatziki is made with Greek yogurt', 'HMyQ71O7Fj0', 'https://www.youtube.com/embed/HMyQ71O7Fj0');
 new BreakFast('It contains 60 calories', 'Treating Chronic Diseases', 'It is a culinary herb or family of herbs', 'It contain high amount of Iron', 'RCjjPzCES0g', 'https://www.youtube.com/embed/RCjjPzCES0g');
-new BreakFast('It contains 64 calories', 'Contain Immune-Boosting Nutrients', 'Beneficial for Bone Health', 'Improve High Blood Pressure','IQSWEt4l5xE','https://www.youtube.com/embed/IQSWEt4l5xE');
+new BreakFast('It contains 64 calories', 'Contain Immune-Boosting Nutrients', 'Beneficial for Bone Health', 'Improve High Blood Pressure', 'IQSWEt4l5xE', 'https://www.youtube.com/embed/IQSWEt4l5xE');
 // console.log(BreakFast.allElement);
 
 

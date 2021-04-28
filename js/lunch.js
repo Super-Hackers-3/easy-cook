@@ -2,10 +2,10 @@
 let section = document.getElementsByClassName('FirstBreakFast');
 let button = document.getElementsByClassName('breakFastBtn');
 let star = $("#status0");
-star.hide()
-$("#status1").hide()
-$("#status2").hide()
-$("#status3").hide()
+star.hide();
+$("#status1").hide();
+$("#status2").hide();
+$("#status3").hide();
 
 // let idVideo = ["quPK4Kf5HrY", "Hyz0C7i3ysU", "WEDndTCyGgU"];
 // let videoSrc = ["https://www.youtube.com/embed/quPK4Kf5HrY", "https://www.youtube.com/embed/Hyz0C7i3ysU", "https://www.youtube.com/embed/WEDndTCyGgU"];
@@ -35,6 +35,8 @@ for (let i = 0; i < section.length; i++) {
   button[i].addEventListener('click', handleClick);
   console.log(i);
 
+  // i=[0,1,2,3]
+  // eslint-disable-next-line no-inner-declarations
   function handleClick(event) {
     event.preventDefault()
     $(`#status${i}`).show();
@@ -72,6 +74,7 @@ for (let i = 0; i < section.length; i++) {
 
   document.getElementById(`ratingForm${i}`).addEventListener('submit', handleSubmit)
 
+  // eslint-disable-next-line no-inner-declarations
   function handleSubmit(event) {
     event.preventDefault();
     // console.log (document.querySelector('input[name=rating]:checked')=== null);
@@ -120,7 +123,6 @@ for (let i = 0; i < section.length; i++) {
 
 
 
-
 //         $(`form#ratingForm${i}`).submit(function(e) 
 //         {
 //          console.log($(`#ratingForm${i} :radio:checked`)); 
@@ -156,22 +158,16 @@ for (let i = 0; i < section.length; i++) {
 // for (let i=0; i<videos.length; i++) {
 
 //   let youtube = videos[i];
-
-
-
-// to get the elements to local storage (for recomendation)
-let dinnerImages = document.getElementsByClassName('imgeSection');
-let dinnerTitles = document.getElementsByClassName('recipeTitle');
+let lunchImages = document.getElementsByClassName('imgeSection');
+let lunchTitles = document.getElementsByClassName('recipeTitle');
 let arrayOfRecipesTitles = [];
 let arrayOfRecipesImages = [];
 
-for (let i = 0; i < dinnerTitles.length; i++) {
-  arrayOfRecipesTitles.push(dinnerTitles.item(i).innerHTML);
+for (let i = 0; i < lunchTitles.length; i++) {
+  arrayOfRecipesTitles.push(lunchTitles.item(i).innerHTML);
 }
-for (let i = 0; i < dinnerImages.length; i++) {
-  arrayOfRecipesImages.push(dinnerImages.item(i).currentSrc);
+for (let i = 0; i < lunchImages.length; i++) {
+  arrayOfRecipesImages.push(lunchImages.item(i).currentSrc);
 }
-
-localStorage.setItem('DTitles', JSON.stringify(arrayOfRecipesTitles));
-localStorage.setItem('DImages', JSON.stringify(arrayOfRecipesImages));
-
+localStorage.setItem('LTitles', JSON.stringify(arrayOfRecipesTitles));
+localStorage.setItem('LImages', JSON.stringify(arrayOfRecipesImages));
