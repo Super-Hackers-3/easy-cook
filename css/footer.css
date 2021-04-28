@@ -6,7 +6,7 @@
 }
 
 footer {
-    background-color: #a8b0bf7e;
+    background-color: #1c252698;
     height: 200px;
     margin-bottom: 1%;
 }
@@ -22,9 +22,8 @@ footer {
     width: 50px;
 }
 
-
 main {
-    background-color:#1c252698;
+    background-color: #9aa8aa98;
 }
 
 .copyRights {
@@ -33,7 +32,8 @@ main {
     position: absolute;
     bottom: 1%;
     right: 39.9%;
-    font-weight: 600;
+    /* font-weight: 600; */
+    color: #A8B0BF;
 }
 
 .brief {
@@ -43,22 +43,23 @@ main {
     position: absolute;
     right: 2.5%;
     bottom: 2%;
-    font-weight: 600;
+}
+
+#italic{
+    font-style: italic;
 }
 
 .brief p {
     padding-left: 10px;
-    
 }
-
 .brief p a {
     text-decoration: none;
-    color: black;
-    font-weight: 600;
+    color: #A8B0BF;
+    /* font-weight: 600; */
 }
 
 .brief p a:hover {
-    color: #7C747C;
+    color: gold;
 }
 
 .address {
@@ -68,11 +69,12 @@ main {
     position: absolute;
     left: 5%;
     bottom: 2%;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .address p {
     padding-top: 7px;
+    color: #A8B0BF;
 }
 
 .img2:hover {
@@ -81,4 +83,10 @@ main {
 
 .contacts a {
     text-decoration: none;
+}
+
+.address span{
+    border-bottom: 1px solid gold;
+    font-size: larger;
+    color: #A8B0BF;
 }
