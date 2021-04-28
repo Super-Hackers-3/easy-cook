@@ -15,7 +15,7 @@ let RecomendationImage,
 let arrayOfShowingImages = ['rec1', 'rec2','rec3']; //IDs for the images in the HOME page
 let arrayOfShowingTitles = ['title1', 'title2','title3']; //IDs for the titles in the HOME page
 let arraOfIds = ['link1', 'link2','link3']; //IDs for the anchor element in the HOME page
-let arrayOfDefaultImages = ['img/Chicken.jpg', 'img/Ribs.jpg', 'img/salad.jpg'];
+let arrayOfDefaultImages = ['img/boiled-eggs.jpg', 'img/Ribs.jpg', 'img/GUACAMOLE.jpg'];
 
 
 if (localStorage.BFTitles && localStorage.LTitles && localStorage.DTitles) {
