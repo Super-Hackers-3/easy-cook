@@ -88,9 +88,3 @@ function showSlides() {
 
 
 showSlides(slideIndex);
-
-
-
-
-
-

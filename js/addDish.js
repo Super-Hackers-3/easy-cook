@@ -2,8 +2,6 @@
 const paragraph = document.getElementById('rending')
 let Ingredients = [];
 let Preparation = [];
-
-
 function Recipes(userRecipes, userStory, userServing, userTime, userPerfectBreak, userPerfectLunch, userPerfectDinner, userImage) {
     this.userRecipes = userRecipes;
     this.userStory = userStory;
@@ -15,18 +13,12 @@ function Recipes(userRecipes, userStory, userServing, userTime, userPerfectBreak
     this.userIngred = Ingredients;
     this.userPreparation = Preparation;
     this.userImage = userImage;
-
     Recipes.meals.push(this)
     save()
-
 }
 Recipes.meals = []
-
 function render() {
-
-
     const container = document.getElementById('showing')
-
     for (let i = 0; i < Recipes.meals.length; i++) {
         let dev = document.createElement('div')
         dev.setAttribute('id', 'dev1')
@@ -34,8 +26,6 @@ function render() {
         dev2.setAttribute('id', 'dev2')
         let nameOfRecipe = document.createElement('p');//done
         nameOfRecipe.setAttribute('id', 'header1')
-
-
         container.appendChild(dev);
         container.appendChild(dev2);
         dev.appendChild(nameOfRecipe)
@@ -46,7 +36,6 @@ function render() {
         imageHead.setAttribute('id', "imagehead")
         imageHead.src = "https://img.icons8.com/plasticine/27/000000/alarm-clock--v2.png";
         dev.appendChild(imageHead)
-
         let timeOfRecipe = document.createElement('p');//done
         timeOfRecipe.setAttribute('id', 'timeOf')
         dev.appendChild(timeOfRecipe);
@@ -72,42 +61,21 @@ function render() {
                 Recipes.meals[i].userPerfectDinner = false
             }
         }
-
-
-
-
         let Text = document.createElement('p');//done
         Text.setAttribute('id', 'textOfingred')
         dev.appendChild(Text);
         Text.textContent = "Ingrediants";
-
-
-
         numberOfServing.setAttribute('id', 'servingaSize')
         dev.appendChild(numberOfServing);
         numberOfServing.textContent = `For ${Recipes.meals[i].userServing} Serving `;
-
-
-
-
-
-
         let StoryText = document.createElement('p');//done
         StoryText.setAttribute('id', 'storyOf')
         dev2.appendChild(StoryText);
         StoryText.textContent = Recipes.meals[i].userStory;
-
-
-
-
-
-
-
         let prepText = document.createElement('p');//done
         prepText.setAttribute('id', 'textOfprep')
         dev2.appendChild(prepText);
         prepText.textContent = "Prepeartion";
-
         let PrepText = document.createElement('ul');
         PrepText.setAttribute('id', 'prepUL')
         dev2.appendChild(PrepText);
@@ -116,10 +84,6 @@ function render() {
             PrepText.appendChild(li)
             li.textContent = Recipes.meals[i].userPreparation[n];
         }
-
-
-
-
         let IngredText = document.createElement('ul');
         IngredText.setAttribute('id', 'ingerdUL')
         dev.appendChild(IngredText);
@@ -129,21 +93,15 @@ function render() {
             IngredText.appendChild(li)
             li.textContent = Recipes.meals[i].userIngred[j];
         }
-
         let image = document.createElement('img');
         container.appendChild(image);
         image.setAttribute('id', "imageRender")
         image.setAttribute("width", "100%")
         image.setAttribute("height", "100%")
         image.setAttribute("src", `${Recipes.meals[i].userImage}`)
-
-
-
     }
 }
-
 console.log(Recipes.userStory)
-
 const form = document.getElementById('dish')
 form.addEventListener('onclick', myFunction)
 function myFunction(event) {
@@ -160,12 +118,8 @@ function preFunction(event) {
     console.log(preper);
     Preparation.push(preper)
     document.getElementById("prep").value = ""
-
-
 }
-
 form.addEventListener('submit', handleSubmit)
-
 function handleSubmit(event) {
     event.preventDefault()
     let Recipe = event.target.nameField.value
@@ -175,7 +129,6 @@ function handleSubmit(event) {
     let perfectBreak = event.target.breakfast.checked
     let perfectLunch = event.target.lunch.checked
     let perfectDinner = event.target.dinner.checked
-
     let evenImage = event.target.recipeImage.value
     var newRecipe = new Recipes(Recipe, Story, serving, time, perfectBreak, perfectLunch, perfectDinner, evenImage)
     console.log(newRecipe);
@@ -183,13 +136,9 @@ function handleSubmit(event) {
     //    save()
     form.removeEventListener('submit', handleSubmit)
 }
-
-
 function showFunction() {
     document.getElementById('showing');
-
 }
-
 function save() {
     let dataArray = JSON.stringify(Recipes.meals)
     console.log(typeof Recipes.meals)
@@ -198,19 +147,12 @@ function save() {
     console.log(Recipes.meals)
 }
 function retrive() {
-
     let userMEAL = localStorage.getItem('meals')
     let content = JSON.parse(userMEAL)
     console.log(Recipes.meals)
-
     if (content != null) {
-
         Recipes.meals = content
-
     }
-
     console.log(typeof Recipes.meals)
 }
-
-
 retrive()
