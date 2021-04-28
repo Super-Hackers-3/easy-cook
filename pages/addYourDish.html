@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="../css/addDish.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Karantina:wght@300;700&family=Lato&family=Lobster&family=Montserrat&family=Open+Sans&family=Original+Surfer&display=swap" rel="stylesheet">
 
 </head>
 
@@ -52,29 +55,29 @@
                 <div id="smallBox">
                
                 <!-- <label for="nameField"></label><br> -->
-                <input type="text" id="nameField" placeholder="Recipe Name">
+                <input type="text" id="nameField" placeholder="Recipe Name" required>
                 <br>
              
-                <input type="text" placeholder="Description" id="recipeStory">
+                <input type="text" placeholder="Description" id="recipeStory"required >
                 <br>
                 
-                <input type="number" id="serving" placeholder="Serving Per Person">
+                <input type="number" id="serving" placeholder="Serving Per Person"required>
                 <br>
                 
 
-                <input type="number" id="cookTime" placeholder="Cooking Time Per Minute">
+                <input type="number" id="cookTime" placeholder="Cooking Time Per Minute"required >
                 <br>
                
                 <input type="text" id="myBtn" value="" placeholder="Add Ingredient">
-                <button id="forIngred"onclick="myFunction()" >+</button>
+                <button id="forIngred"onclick="myFunction(event)" >+</button>
                 <br>
                 
                
                 <input type="text" id="prep" value="" placeholder=" Add Preparation Step">
-                <button id="forPrep" onclick="preFunction()">+</button>
+                <button id="forPrep" onclick="preFunction(event)">+</button>
                 <br>
                 <!-- <h4> Perfect for: </h4> -->
-                <input type="url" id="recipeImage" name="recipeImage" placeholder="URL">
+                <input type="url" id="recipeImage" name="recipeImage" placeholder="URL" required>
                 <br>
                 <section id="perfect">
                 <input type="checkbox" id="breakfast" name="perfect" value="breakfast">
@@ -87,26 +90,16 @@
                 <br>
                
                 
-                <button type="submit" id="one" onclick="shayFunction()">Add your recipe</button>
+                <button type="submit" id="one" onclick="shayFunction()" >Add your recipe</button>
             </div>
             
             </fieldset>
         </form>
         <br>
         <section id="showing">
-            <!-- <div id="par">
-                <div id="headerm"></div>
-                <div id="servings"></div>
-                <div id="time"></div>
-                <div id="prefer"></div>
-                <div id="story"></div>
-                <div id="ingre"></div>
-                <div id="prepr"></div>
-                <div id="ingreof"></div>
-                <div id="prepof"></div>
-                <div id="footer"></div>
-           </div>
-            <div id="imageof"></div> -->
+           <div class=""></div>
+           <div></div>
+           <div></div>
             
         </section>
 
