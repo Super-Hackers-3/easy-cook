@@ -1,86 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class = "color" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>addyourdish</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/addDish.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+
+
 </head>
 
 <body>
     <header>
+        <div class="header">
+            <div class = "he">
+                <a href="../index.html"><img class= "img1" src="../img/maxresdefault-removebg (2).png" alt=""></a>
+            </div>
+            <nav class="menu">
+                <ul class="unorderedList">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)"> CATEGORIES <i class="fa fa-chevron-down"></i></a>
+                        <ul class="subContent">
+                            <li><a href="../pages/breakfast.html">BREAKFAST</a></li>
+                            <li><a href="../pages/dinner.html">LUNCH</a></li>
+                            <li><a href="../pages/lunch.html">DINNER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../pages/addYourDish.html">ADD YOUR DISHES</a></li>
+                    <li><a href="../pages/aboutUs.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
     <main>
-        <h2>add your dish here</h2>
         <form id="dish">
-            <fieldset>
-                <legend>ADD YOUR DISH </legend>
-                <label for="nameField">recipe name</label>
-                <input type="text" id="nameField">
-                <br>
-                <label for="recipeStory">Tell us the story of your dish(optional):</label><br>
-                <textarea name="message" rows="10" cols="30"></textarea>
-                <br>
-                <label for="serving">serving</label>
-                <input type="number" id="serving">
-                <br>
-                <label for="cookTime">Cooking time</label>
-                <input type="time" id="appt" name="appt"
-       min="09:00" max="18:00" required>
-                <br>
-                <h4> perfect for: </h4>
-                <input type="radio" id="breakfast" name="perfect" value="breakfast">
-                <label for="breakfast">Breakfast</label><br>
-                <input type="radio" id="lunch" name="perfect" value="lunch">
-                <label for="lunch">lunch</label><br>
-                <input type="radio" id="dinner" name="perfect" value="dinner">
-                <label for="dinner">dinner</label><br>
-                <input type="radio" id="other" name="perfect" value="other">
-                <label for="other">Other</label><br>
-
-                ingrediants:<br> 
-                <!-- this for adding more ingrediants -->
-                <label for="ing1"></label>
-                <input type="text" id="ing1">
-                <button type="button" >+ ingrediants</button>
-                <div>
-
-                </div>
-
-
-                steps:<br>
-                <!-- this for adding more steps -->
-                <label for="step1"></label>
-                <input type="text" id="step1">
-                <button type="button" >+ step</button><br>
-
-                <label for="recipeImage">Add your dish image:</label>
-                <input type="url" id="recipeImage" name="recipeImage">
-                <input type="submit" value="add"><br>
-                <button type="button">add your recipe</button>
+            <div id="headingBox">ADD YOUR DISH</div>
+            <div id="bigBox"></div>
+           
+            <div id="about">
+           
+                
+            </div>
+            <fieldset >
+                <div id="smallBox">
                
+                <!-- <label for="nameField"></label><br> -->
+                <input type="text" id="nameField" placeholder="Recipe Name">
+                <br>
+             
+                <input type="text" placeholder="Description" id="recipeStory">
+                <br>
+                
+                <input type="number" id="serving" placeholder="Serving Per Person">
+                <br>
+                
 
+                <input type="number" id="cookTime" placeholder="Cooking Time Per Minute">
+                <br>
+               
+                <input type="text" id="myBtn" value="" placeholder="Add Ingredient">
+                <button id="forIngred"onclick="myFunction()" >+</button>
+                <br>
+                
+               
+                <input type="text" id="prep" value="" placeholder=" Add Preparation Step">
+                <button id="forPrep" onclick="preFunction()">+</button>
+                <br>
+                <!-- <h4> Perfect for: </h4> -->
+                <input type="url" id="recipeImage" name="recipeImage" placeholder="URL">
+                <br>
+                <section id="perfect">
+                <input type="checkbox" id="breakfast" name="perfect" value="breakfast">
+                <label for="breakfast">Breakfast</label>
+                <input type="checkbox" id="lunch" name="perfect" value="lunch">
+                <label for="lunch">Lunch</label>
+                <input type="checkbox" id="dinner" name="perfect" value="dinner">
+                <label for="dinner">Dinner</label>
+                </section>
+                <br>
+               
+                
+                <button type="submit" id="one" onclick="shayFunction()">Add your recipe</button>
+            </div>
+            
             </fieldset>
-
-        </form><br>
-
-        <section id="recipeBrief">
-            <img src="https://via.placeholder.com/200x100" alt="">
-            <h2>recipe name</h2>
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi delectus quidem ratione nostrum quae laudantium harum mollitia eius nesciunt animi dolore dolor optio, quod quos obcaecati nam! Perspiciatis, necessitatibus aliquid.</p>
+        </form>
+        <br>
+        <section id="showing">
+            <!-- <div id="par">
+                <div id="headerm"></div>
+                <div id="servings"></div>
+                <div id="time"></div>
+                <div id="prefer"></div>
+                <div id="story"></div>
+                <div id="ingre"></div>
+                <div id="prepr"></div>
+                <div id="ingreof"></div>
+                <div id="prepof"></div>
+                <div id="footer"></div>
+           </div>
+            <div id="imageof"></div> -->
+            
         </section>
 
 
-
-
     </main>
+    <hr>
     <footer>
-
-    </footer>
-
-
+        <address class="address"><span>Contact Us</span>
+            <br>
+            <br>
+            <p>Wakehurst Street
+                <br>
+                Littleton, CO 80123</p>
+                <p>+1-202-555-0181</p>
+                <p>easycooking@recipesforyou.com</p></address>
+                <div class="contacts">
+                    <a href="javascript:void(0)">
+                        <img class="img2" src="../img/Facebook.png" alt="Facebook">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img class="img2" src="../img/WhatsApp.png" alt="Instagram">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img class="img2" src="../img/Wifi.png" alt="Pinterest+"> 
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img class="img2" src="../img/Twitter.png" alt="Twitter"> 
+                    </a> 
+                    <hr>
+                    <br>
+                </div>
+                <div class="rights">
+                    <p class="copyRights">&copy;2021 All Rights Reserved</p>
+                </div>
+                <div class="brief">
+                    <p><span id="italic">“People who love to eat are always the best people” </span> 
+                        <br> - Julia Child</p>
+                    <br>
+                    <p><a href="javascript:void(0)">Terms and Conditions</a></p>
+                    <br>
+                    <p><a href="javascript:void(0)" >Privacy & Policy</a></p>
+                </div>
+    </footer>     
+<script src="../js/addDish.js"></script>
 </body>
 
 </html>
