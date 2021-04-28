@@ -36,6 +36,7 @@ for (let i = 0; i < section.length; i++) {
   console.log(i);
 
   // i=[0,1,2,3]
+  // eslint-disable-next-line no-inner-declarations
   function handleClick(event) {
     event.preventDefault()
     $(`#status${i}`).show();
@@ -73,6 +74,7 @@ for (let i = 0; i < section.length; i++) {
 
   document.getElementById(`ratingForm${i}`).addEventListener('submit', handleSubmit)
 
+  // eslint-disable-next-line no-inner-declarations
   function handleSubmit(event) {
     event.preventDefault();
     // console.log (document.querySelector('input[name=rating]:checked')=== null);
@@ -157,16 +159,16 @@ for (let i = 0; i < section.length; i++) {
 // for (let i=0; i<videos.length; i++) {
 
 //   let youtube = videos[i];
-  let lunchImages = document.getElementsByClassName('imgeSection');
-  let lunchTitles = document.getElementsByClassName('recipeTitle');
-  let arrayOfRecipesTitles = [];
-  let arrayOfRecipesImages = [];
+let lunchImages = document.getElementsByClassName('imgeSection');
+let lunchTitles = document.getElementsByClassName('recipeTitle');
+let arrayOfRecipesTitles = [];
+let arrayOfRecipesImages = [];
 
-  for (let i = 0; i < lunchTitles.length; i++) {
-    arrayOfRecipesTitles.push(lunchTitles.item(i).innerHTML);
-  }
-  for (let i = 0; i < lunchImages.length; i++) {
-    arrayOfRecipesImages.push(lunchImages.item(i).currentSrc);
-  }
-  localStorage.setItem('LTitles', JSON.stringify(arrayOfRecipesTitles));
-  localStorage.setItem('LImages', JSON.stringify(arrayOfRecipesImages));
+for (let i = 0; i < lunchTitles.length; i++) {
+  arrayOfRecipesTitles.push(lunchTitles.item(i).innerHTML);
+}
+for (let i = 0; i < lunchImages.length; i++) {
+  arrayOfRecipesImages.push(lunchImages.item(i).currentSrc);
+}
+localStorage.setItem('LTitles', JSON.stringify(arrayOfRecipesTitles));
+localStorage.setItem('LImages', JSON.stringify(arrayOfRecipesImages));
