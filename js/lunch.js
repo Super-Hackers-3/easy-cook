@@ -2,10 +2,10 @@
 let section = document.getElementsByClassName('FirstBreakFast');
 let button = document.getElementsByClassName('breakFastBtn');
 let star = $("#status0");
-star.hide()
-$("#status1").hide()
-$("#status2").hide()
-$("#status3").hide()
+star.hide();
+$("#status1").hide();
+$("#status2").hide();
+$("#status3").hide();
 
 // let idVideo = ["quPK4Kf5HrY", "Hyz0C7i3ysU", "WEDndTCyGgU"];
 // let videoSrc = ["https://www.youtube.com/embed/quPK4Kf5HrY", "https://www.youtube.com/embed/Hyz0C7i3ysU", "https://www.youtube.com/embed/WEDndTCyGgU"];
@@ -22,11 +22,11 @@ function BreakFast(elment1, elment2, elment3, elment4, videoId, srcVideo) {
 BreakFast.allElement = [];
 
 
-new BreakFast('This comes with 77 calories', 'Eggs Are High in Quality Protein', 'Eggs Raise Levels of “Good” Cholesterol', '40% of your daily vitamin D requirements', 'quPK4Kf5HrY', 'https://www.youtube.com/embed/quPK4Kf5HrY');
-new BreakFast('tzatziki contains 54 calories', 'only 8 grams of carbohydrates', ' Hummus is 100% soy bean', 'Tzatziki is made with Greek yogurt', 'Hyz0C7i3ysU', 'https://www.youtube.com/embed/Hyz0C7i3ysU');
-new BreakFast('It contains 60 calories', 'Treating Chronic Diseases', 'It is a culinary herb or family of herbs', 'It contain high amount of Iron', 'WEDndTCyGgU', 'https://www.youtube.com/embed/WEDndTCyGgU');
-new BreakFast('It contains 64 calories', 'Contain Immune-Boosting Nutrients', 'Beneficial for Bone Health', 'Improve High Blood Pressure');
-// console.log(BreakFast.allElement);
+new BreakFast('This comes with 321 calories', 'Teriyaki Chicken is High in Protein', 'It contains 35g of protein', 'It contains 22mg of calcium', 'AEUBQ7Ieub0', 'https://www.youtube.com/embed/AEUBQ7Ieub0');
+new BreakFast('This comes with 433 calories', 'It contains 13 grams of carbohydrates', 'It contains 30 g of total Fat', 'It contains 26g of protein', 'JNUTJezkDoY', 'https://www.youtube.com/embed/JNUTJezkDoY');
+new BreakFast('This comes with 694 calories', 'It contains 37g of fat', 'It contains 74g of carbohydrates', 'It contains 11g of protein', 'lagDGJnKpdI', 'https://www.youtube.com/embed/lagDGJnKpdI');
+new BreakFast('This comes with 666 calories', 'It contains 50g of fat', 'It contains 29g of carbohydrates', 'It contains 26g of protein','cgTYqAp_XoM','https://www.youtube.com/embed/cgTYqAp_XoM');
+
 
 
 
@@ -120,7 +120,6 @@ for (let i = 0; i < section.length; i++) {
   }
 
 }
-
 
 
 

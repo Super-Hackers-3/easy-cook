@@ -1,3 +1,4 @@
+
 'use strict';
 let section = document.getElementsByClassName('FirstBreakFast');
 let button = document.getElementsByClassName('breakFastBtn');
@@ -22,11 +23,10 @@ function BreakFast(elment1, elment2, elment3, elment4, videoId, srcVideo) {
 BreakFast.allElement = [];
 
 
-new BreakFast('This comes with 77 calories', 'Eggs Are High in Quality Protein', 'Eggs Raise Levels of “Good” Cholesterol', '40% of your daily vitamin D requirements', 'quPK4Kf5HrY', 'https://www.youtube.com/embed/quPK4Kf5HrY');
-new BreakFast('tzatziki contains 54 calories', 'only 8 grams of carbohydrates', ' Hummus is 100% soy bean', 'Tzatziki is made with Greek yogurt', 'Hyz0C7i3ysU', 'https://www.youtube.com/embed/Hyz0C7i3ysU');
-new BreakFast('It contains 60 calories', 'Treating Chronic Diseases', 'It is a culinary herb or family of herbs', 'It contain high amount of Iron', 'WEDndTCyGgU', 'https://www.youtube.com/embed/WEDndTCyGgU');
-new BreakFast('It contains 64 calories', 'Contain Immune-Boosting Nutrients', 'Beneficial for Bone Health', 'Improve High Blood Pressure');
-// console.log(BreakFast.allElement);
+new BreakFast('This comes with 47 calories', 'It contains 5.3 grams of carbohydrates', 'It contains 2.7g of protein', 'It contains 162.7mg sodium', 'USgUYHOfSsk', 'https://www.youtube.com/embed/USgUYHOfSsk');
+new BreakFast('This comes with 582 calories', 'It contains 100.72 grams of carbohydrates', 'It contains 11 g of total Fat', 'It contains 15g of protein', 'sv3TXMSv6Lw', 'https://www.youtube.com/embed/sv3TXMSv6Lw');
+new BreakFast('This comes with 163 calories', 'It contains 41g of carbohydrates', 'It contains 31g of sugars', 'It contains 96.4mg of vitamin C', 'Zp-F68Fa-ps', 'https://www.youtube.com/embed/Zp-F68Fa-ps');
+new BreakFast('This comes with 184 calories', 'It contains 15.8g of fat', 'It contains 12.3g of carbohydrates', 'It contains 2.5g of protein','23tGra9KBa0','https://www.youtube.com/embed/23tGra9KBa0');
 
 
 
@@ -157,21 +157,16 @@ for (let i = 0; i < section.length; i++) {
 // for (let i=0; i<videos.length; i++) {
 
 //   let youtube = videos[i];
+  let lunchImages = document.getElementsByClassName('imgeSection');
+  let lunchTitles = document.getElementsByClassName('recipeTitle');
+  let arrayOfRecipesTitles = [];
+  let arrayOfRecipesImages = [];
 
-
-
-// to get the elements to local storage (for recomendation)
-let dinnerImages = document.getElementsByClassName('imgeSection');
-let dinnerTitles = document.getElementsByClassName('recipeTitle');
-let arrayOfRecipesTitles = [];
-let arrayOfRecipesImages = [];
-
-for (let i = 0; i < dinnerTitles.length; i++) {
-  arrayOfRecipesTitles.push(dinnerTitles.item(i).innerHTML);
-}
-for (let i = 0; i < dinnerImages.length; i++) {
-  arrayOfRecipesImages.push(dinnerImages.item(i).currentSrc);
-}
-
-localStorage.setItem('DTitles', JSON.stringify(arrayOfRecipesTitles));
-localStorage.setItem('DImages', JSON.stringify(arrayOfRecipesImages));
+  for (let i = 0; i < lunchTitles.length; i++) {
+    arrayOfRecipesTitles.push(lunchTitles.item(i).innerHTML);
+  }
+  for (let i = 0; i < lunchImages.length; i++) {
+    arrayOfRecipesImages.push(lunchImages.item(i).currentSrc);
+  }
+  localStorage.setItem('LTitles', JSON.stringify(arrayOfRecipesTitles));
+  localStorage.setItem('LImages', JSON.stringify(arrayOfRecipesImages));
