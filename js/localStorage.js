@@ -117,7 +117,7 @@ function dinner() {
     RecomendationImage = document.getElementById(arrayOfShowingImages[i]);
     RecomendationImage.setAttribute('src', dinnerRecipeImage[i].slice(23).slice(0,-1));
     if(i === arrayOfShowingImages.length-1){
-      RecomendationImage.setAttribute('src', dinnerRecipeImage[i].slice(23).slice(0,-2));
+      RecomendationImage.setAttribute('src', dinnerRecipeImage[i].slice(23).slice(0,-1));
     }
   }
 
