@@ -133,7 +133,7 @@ for (let i = 0; i < section.length; i++) {
 //                 $(`#status${i}`).html( 'You picked ' + $(`input:radio[name=rating${i}]:checked`).val() );
 //             }
 
-//         });
+
 
 
 
