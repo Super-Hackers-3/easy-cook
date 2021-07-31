@@ -133,7 +133,7 @@ for (let i = 0; i < section.length; i++) {
 //                 $(`#status${i}`).html( 'You picked ' + $(`input:radio[name=rating${i}]:checked`).val() );
 //             }
 
-//         });
+
 
 
 
@@ -168,5 +168,5 @@ for (let i = 0; i < section.length; i++) {
   for (let i = 0; i < lunchImages.length; i++) {
     arrayOfRecipesImages.push(lunchImages.item(i).currentSrc);
   }
-  localStorage.setItem('LTitles', JSON.stringify(arrayOfRecipesTitles));
-  localStorage.setItem('LImages', JSON.stringify(arrayOfRecipesImages));
+  localStorage.setItem('DTitles', JSON.stringify(arrayOfRecipesTitles));
+  localStorage.setItem('DImages', JSON.stringify(arrayOfRecipesImages));
