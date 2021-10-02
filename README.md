@@ -9,7 +9,7 @@ we chose this name as we are optimistic people!
 + Miral Al-Abdullah
 + Thaer Braizat
 + Shaheenaz
-+ Miral
++ Ibrahim Alhamshari
 + Jana Abdelkader
 
 ## About our project:
